@@ -86,8 +86,6 @@ body {
 .home {
   height: 1000px;
   max-width: 100%;
-  background-image: url(/images/fondo.png);
-
   display: flex;
   justify-content: space-around;
   align-items: center;
