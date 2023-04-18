@@ -447,18 +447,22 @@ footer {
   }
   .avatar-picture {
     position: relative;
-    top: 80px;
+    top: 40px;
     height: 200px;
     width: 200px;
     align-items: center;
+    margin-top: 20px;
   }
   .home-w {
     position: relative;
-    top: 125px;
+    top: 85px;
     width: 90%;
     text-align: center;
     display: flex;
     justify-content: center;
+  }
+  .porfile-name{
+    font-size: 40px;
   }
 
   .slider-wrapper img {
