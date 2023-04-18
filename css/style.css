@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 80px 0px 0;
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23000000'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
@@ -17,6 +17,7 @@ body {
 }
 
 .header {
+
   background-color: #ffffff;
   height: 80px;
   position: fixed;
@@ -73,7 +74,7 @@ body {
 }
 
 .nav-toggle {
-  color: white;
+  color: rgb(0, 0, 0);
   background: none;
   border: none;
   font-size: 30px;
@@ -84,21 +85,24 @@ body {
 }
 
 .home {
-  height: 1000px;
+  height: 768px;
   max-width: 100%;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
   text-align: center;
 }
 .avatar-picture {
+  margin: 0 10px;
   border-radius: 15%;
-  height: 400px;
+  height: 350px;
 }
 
 .home-w {
   font-size: 40px;
   color: white;
+  margin: 0 10px;
 }
 
 .logo {
@@ -107,88 +111,92 @@ body {
 
 /* slider */
 
-.slider-text{
-  text-align: center;
-  margin-top: 5vw;
-  font-size: 2rem;
-}
-
-.container {
-  margin: auto;
-  max-width: 1280px;
-  padding: 3vw;
-  box-sizing: border-box;
-}
-
-.nom ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-
-}
 
 .slider {
   position: relative;
   width: 100%;
-  height: 50vw;
-  max-height: 720px;
+  height: 400px;
+  overflow: hidden;
 }
 
-.slider li {
+.slider-wrapper {
+  position: relative;
+  width: 300%;
+  height: 100%;
+  left: 0;
+  transition: left 0.5s ease;
+}
+
+.slider-wrapper img {
+  float: left;
+  width: 33.333%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.slider-prev,
+.slider-next {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 50px;
+}
+
+.slider-prev {
+  left: 50px;
+}
+
+.slider-next {
+  right: 50px;
+}
+
+/* Estilos para el elemento modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  opacity: 0;
-  width: inherit;
-  height: inherit;
-  transition: opacity 0.5s;
-}
-
-.slider li img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
-.slider li:first-child {
-  opacity: 1;
+.modal-content {
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-.slider li:target {
-  opacity: 1;
-}
-
-.nom {
-  text-align: center;
-  margin: 2vw;
-}
-
-.nom li {
-  display: inline-block;
-  width: 3vw;
-}
-
-.nom li a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
   color: #fff;
-  text-decoration: none;
-  background-color: rgb(0, 0, 0);
-  padding: 1vw;
-  width: 3vw;
-  height: 3vw;
-  font-size: 1.5vw;
-  border-radius: 100%;
-  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
 }
+
 
 /* acerca de nosotros */
 
 .about-me {
-  height: 1080px;
+  height: 768px;
   font-size: 25px;
   display: flex;
   justify-content: space-around;
@@ -206,15 +214,10 @@ li {
   /* background-color: rebeccapurple; */
   margin: 20px;
   text-align: center;
-  width: 50%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.skills {
-  text-align: center;
-  width: 50%;
 }
 
 .icons {
@@ -235,7 +238,7 @@ li {
   flex-direction: column;
   align-items: center;
   padding-top: 80px;
-  height: 1080px;
+  height: 768px;
   justify-content: center;
 }
 
@@ -268,23 +271,62 @@ li {
 
 .barra-reproduccion {
   position: fixed;
+  display: flex;
+  flex-direction: column;
   bottom: 0;
   box-sizing: border-box;
-  text-align: end;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: transparent;
 }
+
+
 .barra-reproduccion img {
   position: absolute;
   top: -17px;
-  left: 0;
   width: 100%;
   height: 115px;
   border-radius: 5% 5%;
 }
+
+
+.img-player {
+  position: absolute;
+  display: flex;
+  top: 0px;
+  height: 100px;
+  width: 300px;
+}
+
 .barra-reproduccion iframe {
   border: none;
   padding: 0;
   margin: 0;
-  border-radius: 5%;
+  border-radius: 0;
+}
+
+/* Estilos para pantallas de escritorio */
+@media only screen and (min-width: 768px) {
+  .barra-reproduccion {
+    left: 0;
+    bottom: 0;
+    margin: 0 0 5px 5px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+  .barra-reproduccion {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+  }
 }
 
 
@@ -298,11 +340,11 @@ footer {
 
 .container-footer {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 30px;
+  margin: 0 100px;
+  padding: 0 auto;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
 }
 
 .footer-info h3,
@@ -319,6 +361,8 @@ footer {
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: center;
+
 }
 
 .footer-social li {
@@ -336,8 +380,141 @@ footer {
   background-color: #000000;
   font-size: 20px;
   transition: background-color 0.3s;
+  text-decoration: none;
 }
 
+.footer-social a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-color: #ffffff;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 20px;
+    height: 60px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #2c3e50;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 70px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+    color: #83c5f7;
+    transition: 0.5s;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .nav-menu_visible {
+    left: 0;
+  }
+  .home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 100%;
+  }
+  .avatar-picture {
+    position: relative;
+    top: 80px;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+  }
+  .home-w {
+    position: relative;
+    top: 125px;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider-wrapper img {
+    height: auto;
+    object-fit: cover;
+  }
+
+  .slider-prev,
+  .slider-next {
+    display: block;
+  }
+
+
+  footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px 0;
+    height: 450px;
+  }
+  .container-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.footer-info h3,
+.footer-social h3 {
+  margin-bottom: 20px;
+}
+.footer-info p {
+  margin: 0;
+}
+.footer-social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.footer-social li {
+  margin-right: 10px;
+}
+.footer-social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #000000;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
 .footer-social a:hover {
   background-color: #fff;
   color: #333;
