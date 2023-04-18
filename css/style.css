@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   /* outline: solid rgb(253, 253, 253) 1px; */
 }
 
