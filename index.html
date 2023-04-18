@@ -10,107 +10,142 @@
     <script src="https://kit.fontawesome.com/5f222cc947.js" crossorigin="anonymous"></script>
     <title>Interaccion Medios</title>
 </head>
-<header class="header">
-    <nav class="nav">
-        <a href="https://alexrdgz.github.io/InteraccionMedios.github.io/">
-            <img src="./images/Portada.webp" class="logo nav-link"></img></a>
-        <button class="nav-toggle" aria-label="abrir menu"><i class="fa-solid fa-bars"
-                style="color: #000000;"></i></button>
-        <ul class="nav-menu nav-menu_visible">
-            <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home" href="#home">Inicio</a></li>
-            <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="#about-me">Acerca de nosotros</a></li>
-            <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="#services">Servicios</a></li>
-            <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="#contact">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
 
 <body onload="cambiarImagen()">
-    <div id="home" class="home">
-        <div>
-            <img class="avatar-picture" src="./images/Logo-pata.webp" alt="Imagen">
-        </div>
-        <div class="home-w">
-            <h2 class="porfile-name">¡Interactuando con tus sentidos!</h2>
-        </div>
-    </div>
-    <div class="imagen-del-dia" id="imagen-del-dia">
-        <h1>PROGRAMACION DE HOY</h1>
-        <img id="lunes" src="./images/Lunes.jpg" alt="Programacion del lunes">
-        <img id="martes" src="./images/martes.jpg" alt="Programacion del martes" >
-        <img id="miercoles" src="./images/miercoles.jpg" alt="Programacion del miércoles">
-        <img id="jueves" src="./images/jueves.jpg" alt="Programacion del jueves">
-        <img id="viernes" src="./images/viernes.jpg" alt="Programacion del viernes">
-        <img id="sabado" src="./images/sabado.jpg" alt="Programacion del sábado">
-        <img id="domingo" src="./images/domingo.webp" alt="Programacion del domingo" >
-    </div>
-
-    <h1 class="events">PROXIMOS EVENTOS</h1>
-    <div class="slider">
-        <div class="slider-wrapper">
-            <img src="./images/programacion.webp" alt="Imagen 1" data-index="0">
-            <img src="./images/el-cuartito-victor.webp" alt="Imagen 2" data-index="1">
-            <img src="./images/programa-especial.webp" alt="Imagen 3" data-index="2">
-        </div>
-        <button class="slider-prev">&#8249;</button>
-        <button class="slider-next">&#8250;</button>
-    </div>
-    <div class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content">
-    </div>
-    <div id="about-me" class="about-me">
-        <div class="content-about">
+    <header class="header">
+        <nav class="nav">
+            <a href="https://alexrdgz.github.io/InteraccionMedios.github.io/">
+                <img src="./images/Portada.webp" class="logo nav-link"></img></a>
+            <button class="nav-toggle" aria-label="abrir menu"><i class="fa-solid fa-bars"
+                    style="color: #000000;"></i></button>
+            <ul class="nav-menu nav-menu_visible">
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home" href="#home">Inicio</a>
+                </li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home" href="#imagen-del-dia">PROGRAMACION</a>
+                </li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="#about-me">Acerca de nosotros</a></li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="#services">Servicios</a></li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="home">
+            <div>
+                <img class="avatar-picture" src="./images/Logo-pata.webp" alt="Imagen">
+            </div>
+            <div class="home-w">
+                <h2 class="porfile-name">¡Interactuando con tus sentidos!</h2>
+            </div>
+        </section>
+        <section class="imagen-del-dia" id="imagen-del-dia">
+            <h1>PROGRAMACION DE HOY</h1>
+            <img id="lunes" src="./images/Lunes.jpg" alt="Programacion del lunes">
+            <img id="martes" src="./images/martes.jpg" alt="Programacion del martes">
+            <img id="miercoles" src="./images/miercoles.jpg" alt="Programacion del miércoles">
+            <img id="jueves" src="./images/jueves.jpg" alt="Programacion del jueves">
+            <img id="viernes" src="./images/viernes.jpg" alt="Programacion del viernes">
+            <img id="sabado" src="./images/sabado.jpg" alt="Programacion del sábado">
+            <img id="domingo" src="./images/domingo.webp" alt="Programacion del domingo">
+        </section>
+        <section class="events">
+            <h1>PROXIMOS EVENTOS</h1>
+            <div class="slider">
+                <div class="slider-wrapper">
+                    <img src="./images/programacion.webp" alt="Imagen 1" data-index="0">
+                    <img src="./images/el-cuartito-victor.webp" alt="Imagen 2" data-index="1">
+                    <img src="./images/programa-especial.webp" alt="Imagen 3" data-index="2">
+                </div>
+                <button class="slider-prev">&#8249;</button>
+                <button class="slider-next">&#8250;</button>
+            </div>
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content">
+            </div>
+        </section>
+        <section id="about-me" class="about-me">
             <h1>Acerca de nosotros</h1>
-            <p>Somos un colectivo interdisciplinario integrado por productores, locutores, comunicólogos, ingenieros y
+            <p>Somos un colectivo interdisciplinario integrado por productores, locutores, comunicólogos, ingenieros
+                y
                 personal afín a los medios de comunicación, apasionados por transmitir y difundir arte, cultura y
                 tradición.</p>
-        </div>
-    </div>
-    <div id="services" class="services">
-        <h1>Servicios</h1>
-        <h2>Servicios que ofrecemos</h2>
-        <ul>
-            <li>Servicio 1</li>
-            <li>Servicio 2</li>
-            <li>Servicio 3</li>
-            <li>Servicio 4</li>
-            <li>Servicio 5</li>
-        </ul>
-    </div>
-    <div class="barra-reproduccion">
-        <div class="img-player">
-            <img src="./images/Portada.webp" alt="">
-        </div>
-        <iframe src="https://stream-47.zeno.fm/dinseg38t5suv?zs=W1hYnOrqSJy2AVAm03TG9w" allow="autoplay"></iframe>
-    </div>
-    <script defer src="index.js"></script>
-</body>
-<footer>
-    <div id="contact" class="container-footer">
-        <div class="footer-info">
-            <h3>¡Contáctanos!</h3>
-            <p>Alex Rodriguez</p>
-            <p>Lorem ipsum dolor sit.</p>
-            <p>Telefono: 555 555 5555</p>
-            <p>Email: devf.alexrodriguez@gmail.com</p>
-        </div>
-        <div class="footer-social">
-            <h3>¡Síguenos en nuestras Redes Sociales!</h3>
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100081777163941" target="_blank"><i
-                            class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/interaccionmedios/" target="_blank"><i
-                            class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.youtube.com/@InterAccion_Medios" target="_blank"><i
-                            class="fab fa-youtube"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis ipsa delectus doloremque consectetur
+                autem? Architecto, illum voluptatum quo culpa cum id repudiandae repellat temporibus magni porro ipsam
+                doloribus sapiente cumque!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque voluptatibus dolore perspiciatis delectus
+                assumenda amet rem ipsa, quo ipsum voluptates explicabo, ut magni. Exercitationem consectetur illo quae
+                odit, vel laudantium?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias soluta tenetur dignissimos ullam cumque
+                ipsa, velit tempore dolores at, repudiandae commodi magnam, aut eos repellat ipsum explicabo qui nulla
+                reprehenderit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatem ab asperiores deleniti ducimus!
+                Ducimus accusamus eaque quia molestiae harum et, quaerat consequuntur officiis facere explicabo
+                voluptatibus natus dolore iusto.</p>
 
+
+        </section>
+        <section id="services" class="services">
+            <h1>Servicios</h1>
+            <h2>Servicios que ofrecemos</h2>
+            <ul>
+                <li>Servicio 1: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut, ipsam quisquam sint
+                        aliquid, cumque dolor dolore eum officia quae quidem praesentium a reprehenderit corrupti porro
+                        laboriosam, natus debitis delectus?</p>
+                </li>
+                <li>Servicio 2: <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores ducimus obcaecati
+                        eum voluptatibus sed debitis dolore, quas atque delectus dolorum ratione, labore qui veritatis
+                        sunt porro dignissimos provident. Sequi, nulla.</p>
+                </li>
+                <li>Servicio 3 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga dolores ab aperiam ad
+                        at obcaecati consectetur necessitatibus nihil, illum assumenda repellat ipsum culpa odit
+                        voluptatum porro sed, voluptatibus autem magni!</p>
+                </li>
+                <li>Servicio 4: <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, officia accusantium
+                        maiores rerum aspernatur blanditiis cupiditate perspiciatis pariatur ea, quod aperiam possimus.
+                        Vel consequatur optio odio ipsum dignissimos vitae distinctio.</p>
+                </li>
+                <li>Servicio 5: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem repudiandae
+                        laudantium eaque adipisci rerum ullam at, nulla qui explicabo sequi! Incidunt explicabo labore
+                        itaque eaque soluta totam saepe adipisci iure.</p>
+                </li>
             </ul>
+        </section>
+        <section class="barra-reproduccion">
+            <div class="img-player">
+                <img src="./images/Portada.webp" alt="">
+            </div>
+            <iframe src="https://stream-47.zeno.fm/dinseg38t5suv?zs=W1hYnOrqSJy2AVAm03TG9w" allow="autoplay"></iframe>
+        </section>
+    </main>
+    <script defer src="index.js"></script>
+    <footer>
+        <div id="contact" class="container-footer">
+            <div class="footer-info">
+                <h3>¡Contáctanos!</h3>
+                <p>Alex Rodriguez</p>
+                <p>Lorem ipsum dolor sit.</p>
+                <p>Telefono: 555 555 5555</p>
+                <p>Email: devf.alexrodriguez@gmail.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>¡Síguenos en nuestras Redes Sociales!</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100081777163941" target="_blank"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/interaccionmedios/" target="_blank"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/@InterAccion_Medios" target="_blank"><i
+                                class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+
+                </ul>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+</body>
+
 
 
 </html>

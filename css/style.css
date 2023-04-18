@@ -83,10 +83,16 @@ body {
   display: none;
   cursor: pointer;
 }
-
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .home {
-  height: 768px;
-  max-width: 100%;
+  height: 900px;
+  width: 100%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -94,7 +100,7 @@ body {
   text-align: center;
 }
 .avatar-picture {
-  margin: 0 10px;
+  margin: 0px;
   border-radius: 15%;
   height: 350px;
 }
@@ -102,7 +108,7 @@ body {
 .home-w {
   font-size: 40px;
   color: white;
-  margin: 0 10px;
+  /* margin: 0 10px; */
 }
 
 .logo {
@@ -112,11 +118,10 @@ body {
 .imagen-del-dia {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 800px;
-  text-align: center;
+  padding-top: 80px;
+  height: 900px;
+  justify-content: center;
 }
 .imagen-del-dia h1 {
   margin-bottom: 50px;
@@ -131,13 +136,19 @@ body {
 /* slider */
 
 .events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  height: 900px;
+  justify-content: center;
+}
+.events h1 {
+  margin-bottom: 50px;
   font-size: 40px;
-  text-align: center;
-  width: 100%;
-  height: 100px;
-  padding-top: 20px;
 }
 .slider {
+  margin-top: 25px;
   position: relative;
   width: 100%;
   height: 400px;
@@ -221,38 +232,24 @@ body {
 /* acerca de nosotros */
 
 .about-me {
-  height: 768px;
-  font-size: 25px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-}
-
-.about-me p {
-  padding-top: 20px;
-  margin: auto;
-  text-align: justify;
-}
-
-.content-about {
-  margin: 20px;
-  text-align: center;
-  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 60px 0;
+  height: 900px;
+  max-width: 80%;
+  height: max-content;
 }
-
-.icons {
-  padding-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.about-me h1 {
+  padding: 0;
+  margin-top: 10px;
+  font-size: 40px;
+  text-align: center;
 }
-
-.icon-hcj {
-  height: 150px;
+.about-me p {
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: justify;
 }
 
 /* Seccion de servicios */
@@ -261,25 +258,26 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
-  height: 768px;
-  justify-content: center;
+  padding: 60px 0;
+  height: max-content;
+  max-width: 80%;
 }
 
 .services h1 {
   padding: 0;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .services h2 {
   padding: 0;
   margin-top: 10px;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
 }
 
 .services ul {
   padding: 0;
+  /* margin: 0 100px; */
 }
 
 .services li {
@@ -287,7 +285,7 @@ body {
   list-style: none;
   margin-top: 10px;
   font-size: 25px;
-  text-align: center;
+  text-align: justify;
 }
 
 /* Seccion de informacion de contacto */
@@ -493,7 +491,14 @@ footer {
   .imagen-del-dia img {
     max-width: 100%;
   }
-
+  .imagen-del-dia h1 {
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+  .events h1 {
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
   .slider-wrapper img {
     height: auto;
     object-fit: cover;
