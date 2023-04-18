@@ -1,7 +1,8 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 
-navToggle.addEventListener("click", () => {
+navToggle.addEventListener("click", (event) => {
+  event.preventDefault();
   navMenu.classList.toggle("nav-menu_visible");
 });
 
@@ -39,42 +40,30 @@ setInterval(() => {
   }
 }, 5000);
 
+const sliderImages = document.querySelectorAll(".slider-wrapper img");
+const prevButton = document.querySelector(".slider-prev");
+const nextButton = document.querySelector(".slider-next");
 
-
-
-const sliderImages = document.querySelectorAll('.slider-wrapper img');
-const prevButton = document.querySelector('.slider-prev');
-const nextButton = document.querySelector('.slider-next');
-
-
-const modal = document.querySelector('.modal');
-const modalContent = document.querySelector('.modal-content');
-const closeModal = document.querySelector('.close');
-
+const modal = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal-content");
+const closeModal = document.querySelector(".close");
 
 let selectedIndex = 0;
 
-
 sliderImages.forEach((image, index) => {
-  image.addEventListener('click', () => {
- 
+  image.addEventListener("click", () => {
     selectedIndex = index;
     modalContent.src = image.src;
-    modal.style.display = 'block';
+    modal.style.display = "block";
   });
 });
 
-
-closeModal.addEventListener('click', () => {
-  modal.style.display = 'none';
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
 });
 
-
-modal.addEventListener('click', (event) => {
- 
+modal.addEventListener("click", (event) => {
   if (event.target === modal) {
-    modal.style.display = 'none';
+    modal.style.display = "none";
   }
 });
-
-
