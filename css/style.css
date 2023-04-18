@@ -13,7 +13,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.25);
   background-blend-mode: multiply;
 }
 
@@ -242,14 +242,44 @@ main {
   height: max-content;
 }
 .about-me h1 {
-  padding: 0;
-  margin-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 25px;
   font-size: 40px;
   text-align: center;
 }
 .about-me p {
   margin-top: 10px;
+  padding-bottom: 45px;
   font-size: 25px;
+  text-align: justify;
+}
+
+/* Perfiles */
+.profile {
+  display: flex;
+  background-color: #5a5a5a;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  border-radius: 10px;
+  box-shadow: #fff 2px 2px 5px;
+}
+.profile-img {
+  margin: 30px;
+  border-radius: 25%;
+  height: 150px;
+  width: 150px;
+}
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-right: 40px;
+}
+.profile-container p,
+h1,
+h2 {
   text-align: justify;
 }
 
@@ -488,7 +518,10 @@ footer {
   .porfile-name {
     font-size: 40px;
   }
-
+  .imagen-del-dia {
+    height: 600px;
+    padding-top: 0px;
+  }
   .imagen-del-dia img {
     max-width: 100%;
   }
@@ -496,6 +529,7 @@ footer {
     margin-bottom: 50px;
     font-size: 30px;
   }
+
   .events h1 {
     margin-bottom: 50px;
     font-size: 30px;
@@ -508,6 +542,33 @@ footer {
   .slider-prev,
   .slider-next {
     display: block;
+  }
+
+  /* targetas de presentacion */
+  .profile {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+  }
+  .profile-img {
+    margin: 30px 0 0 0;
+    padding: 0;
+    border-radius: 25%;
+    height: 200px;
+    width: 200px;
+  }
+  .profile-container {
+    display: flex;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    margin: 0 0 10px 0;
+  }
+  .profile-container p,
+  h1,
+  h2 {
+    text-align: justify;
+    margin: 0;
+    padding: 0;
   }
 
   footer {
