@@ -15,28 +15,41 @@
     <header class="header">
         <nav class="nav">
             <a href="https://alexrdgz.github.io/InteraccionMedios.github.io/">
-                <img src="./images/Portada.webp" class="logo nav-link"></img></a>
+                <img src="./images/Portada.webp" class="logo nav-link"></a>
             <button class="nav-toggle" aria-label="abrir menu"><i class="fa-solid fa-bars"
                     style="color: #000000;"></i></button>
-            <ul class="nav-menu nav-menu_visible">
-                <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home" href="https://alexrdgz.github.io/InteraccionMedios.github.io/">Inicio</a>
-                </li>
+            <ul class="nav-menu">
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home"
-                        href="#imagen-del-dia">PROGRAMACION</a>
+                        href="https://alexrdgz.github.io/InteraccionMedios.github.io/">Inicio</a></li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home"
+                        href="#imagen-del-dia">PROGRAMACION</a></li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="./about.html">Acerca de nosotros</a>
                 </li>
-                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="./about.html">Acerca de nosotros</a></li>
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="./services.html">Servicios</a></li>
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="home" class="home">
-            <div>
-                <img class="avatar-picture" src="./images/Logo-pata.webp" alt="Imagen">
+        <section class="events">
+            <h1>PROXIMOS EVENTOS</h1>
+            <div class="slider">
+                <div class="slider-wrapper">
+                    <img class="slider-slide" src="./images/Poster-Playlist.png" alt="Imagen 1" data-index="0">
+                    <img class="slider-slide" src="./images/el-cuartito-victor.webp" alt="Imagen 2" data-index="1">
+                    <img class="slider-slide" src="./images/Trio-Coatepec.jpg" alt="Imagen 3" data-index="2">
+                </div>
+                <button class="slider-prev">
+                    <p><i class="fa-solid fa-circle-left"></i></p>
+                </button>
+                <button class="slider-next">
+                    <p><i class="fa-solid fa-circle-right"></i></p>
+                </button>
             </div>
-            <div class="home-w">
-                <h2 class="porfile-name">¡Interactuando con tus sentidos!</h2>
+            <div class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content">
             </div>
         </section>
         <section class="imagen-del-dia" id="imagen-del-dia">
@@ -49,23 +62,6 @@
             <img id="sabado" src="./images/sabado.jpg" alt="Programacion del sábado">
             <img id="domingo" src="./images/domingo.webp" alt="Programacion del domingo">
         </section>
-        <section class="events">
-            <h1>PROXIMOS EVENTOS</h1>
-            <div class="slider">
-                <div class="slider-wrapper">
-                    <img src="./images/Poster-Playlist.png" alt="Imagen 1" data-index="0">
-                    <img src="./images/el-cuartito-victor.webp" alt="Imagen 2" data-index="1">
-                    <img src="./images/programa-especial.webp" alt="Imagen 3" data-index="2">
-                </div>
-                <button class="slider-prev">&#8249;</button>
-                <button class="slider-next">&#8250;</button>
-            </div>
-            <div class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content">
-            </div>
-        </section>
-
 
         <section class="barra-reproduccion">
             <div class="img-player">

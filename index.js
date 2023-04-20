@@ -1,10 +1,22 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
+const navLinks = document.querySelectorAll(".nav-link");
 
 navToggle.addEventListener("click", (event) => {
   event.preventDefault();
   navMenu.classList.toggle("nav-menu_visible");
 });
+
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("nav-menu_visible");
+    // Aquí reemplaza "href" por el atributo que uses en tus links
+    const href = link.getAttribute("href");
+    window.location.href = href;
+  })
+});
+
+
 
 function cambiarImagen() {
   var hoy = new Date().getDay();
@@ -36,10 +48,13 @@ function cambiarImagen() {
 }
 
 
+
 const sliderWrapper = document.querySelector(".slider-wrapper");
 const sliderPrev = document.querySelector(".slider-prev");
 const sliderNext = document.querySelector(".slider-next");
 let currentPosition = 0;
+let startX = null;
+let startY = null;
 
 function moveSlider(position) {
   currentPosition = position;
@@ -57,19 +72,54 @@ sliderNext.addEventListener("click", () => {
   if (currentPosition < 2) {
     currentPosition++;
     moveSlider(currentPosition);
-  }
-});
-
-setInterval(() => {
-  if (currentPosition < 2) {
-    currentPosition++;
-    moveSlider(currentPosition);
   } else {
     currentPosition = 0;
     moveSlider(currentPosition);
   }
-}, 8000);
+});
 
+sliderWrapper.addEventListener("touchstart", (event) => {
+  startX = event.touches[0].clientX;
+  startY = event.touches[0].clientY;
+});
+
+sliderWrapper.addEventListener("touchmove", (event) => {
+  event.preventDefault();
+});
+
+sliderWrapper.addEventListener("touchend", (event) => {
+  const endX = event.changedTouches[0].clientX;
+  const endY = event.changedTouches[0].clientY;
+  const deltaX = endX - startX;
+  const deltaY = endY - startY;
+  const absDeltaX = Math.abs(deltaX);
+  const absDeltaY = Math.abs(deltaY);
+
+  if (absDeltaX > absDeltaY) {
+    if (deltaX > 0) {
+      // swipe right
+      if (currentPosition > 0) {
+        currentPosition--;
+        moveSlider(currentPosition);
+      }
+    } else {
+      // swipe left
+      if (currentPosition < 2) {
+        currentPosition++;
+        moveSlider(currentPosition);
+      } else {
+        currentPosition = 0;
+        moveSlider(currentPosition);
+      }
+    }
+  }
+
+  startX = null;
+  startY = null;
+});
+
+
+// 
 const sliderImages = document.querySelectorAll(".slider-wrapper img");
 const prevButton = document.querySelector(".slider-prev");
 const nextButton = document.querySelector(".slider-next");
