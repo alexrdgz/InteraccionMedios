@@ -647,14 +647,13 @@ footer {
   }
 
   footer {
-    background-color: #000000;
     color: #fff;
-    padding: 40px 0;
-    height: 500px;
+    padding: 50px 0 250px 0;
+    height: 100%;
+    justify-content: center;
   }
   .container-footer {
     flex-direction: column;
-    align-items: center;
     text-align: center;
   }
   .footer-info h3,
@@ -681,7 +680,7 @@ footer {
     height: 40px;
     color: #fff;
     border-radius: 50%;
-    background-color: #000000;
+    background-color: #161616;
     font-size: 20px;
     transition: background-color 0.3s;
   }
@@ -689,4 +688,5 @@ footer {
     background-color: #fff;
     color: #333;
   }
+  
 }
