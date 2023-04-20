@@ -6,33 +6,6 @@ navToggle.addEventListener("click", (event) => {
   navMenu.classList.toggle("nav-menu_visible");
 });
 
-
-// function cambiarImagen() {
-//   var hoy = new Date().getDay();
-//   var imagen = document.getElementById("martes");
-
-//   if (hoy === 0) {
-//     imagen = document.getElementById("domingo");
-//   } else if (hoy === 1) {
-//     imagen = document.getElementById("lunes");
-//   } else if (hoy === 2) {
-//     imagen = document.getElementById("martes");
-//   } else if (hoy === 3) {
-//     imagen = document.getElementById("miercoles");
-//   } else if (hoy === 4) {
-//     imagen = document.getElementById("jueves");
-//   } else if (hoy === 5) {
-//     imagen = document.getElementById("viernes");
-//   } else if (hoy === 6) {
-//     imagen = document.getElementById("sabado");
-//   }
-
-//   imagen.style.display = "block";
-// }
-
-
-
-
 function cambiarImagen() {
   var hoy = new Date().getDay();
   var imagen = document.getElementById('martes');
@@ -61,6 +34,7 @@ function cambiarImagen() {
   }
   imagen.style.display = "block";
 }
+
 
 const sliderWrapper = document.querySelector(".slider-wrapper");
 const sliderPrev = document.querySelector(".slider-prev");
@@ -94,7 +68,7 @@ setInterval(() => {
     currentPosition = 0;
     moveSlider(currentPosition);
   }
-}, 5000);
+}, 8000);
 
 const sliderImages = document.querySelectorAll(".slider-wrapper img");
 const prevButton = document.querySelector(".slider-prev");
