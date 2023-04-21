@@ -1,0 +1,43 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0 60px 0;
+  height: 100%;
+  width: 80%;
+}
+
+.services h1 {
+  padding: 0;
+  font-size: 40px;
+}
+
+.services h2 {
+  padding: 0;
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.services ul {
+  padding: 0 0 70px 0;
+  /* margin: 0 100px; */
+}
+
+.services li {
+  padding: 0;
+  list-style: none;
+  margin-top: 10px;
+  font-size: 25px;
+  text-align: justify;
+}
+
+@media (max-width: 1600px) {
+  .services li {
+    padding: 0;
+    list-style: none;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: justify;
+  }
+}

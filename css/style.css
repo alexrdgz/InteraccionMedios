@@ -215,95 +215,6 @@ main {
   cursor: pointer;
 }
 
-/* acerca de nosotros */
-
-.about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 60px 0;
-  height: 900px;
-  max-width: 80%;
-  height: max-content;
-}
-.about-me h1 {
-  padding-bottom: 20px;
-  margin-top: 25px;
-  font-size: 40px;
-  text-align: center;
-}
-.about-me p {
-  margin-top: 10px;
-  padding-bottom: 45px;
-  font-size: 25px;
-  text-align: justify;
-}
-
-/* Perfiles */
-.profile {
-  display: flex;
-  background-color: #5a5a5a;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  margin: 25px 0;
-  border-radius: 10px;
-  box-shadow: #fff 2px 2px 5px;
-}
-.profile-img {
-  margin: 30px;
-  border-radius: 25%;
-  height: 150px;
-  width: 150px;
-}
-.profile-container {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding-right: 40px;
-}
-.profile-container p,
-h1,
-h2 {
-  text-align: justify;
-}
-
-/* Seccion de servicios */
-
-.services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 80px 0 0 0;
-  height: max-content;
-  width: 80%;
-}
-
-.services h1 {
-  padding: 0;
-  font-size: 40px;
-}
-
-.services h2 {
-  padding: 0;
-  margin-top: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.services ul {
-  padding: 0 0 70px 0;
-  /* margin: 0 100px; */
-}
-
-.services li {
-  padding: 0;
-  list-style: none;
-  margin-top: 10px;
-  font-size: 25px;
-  text-align: justify;
-}
-
 /* Seccion de informacion de contacto */
 
 .barra-reproduccion {
@@ -452,66 +363,7 @@ footer {
     padding-bottom: 40px;
     max-width: 55%;
   }
-/* acerca de nostros */
-  .about-me {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 0;
-    height: 900px;
-    max-width: 85%;
-    height: max-content;
-  }
-  .about-me h1 {
-    padding-bottom: 15px;
-    margin-top: 25px;
-    font-size: 30px;
-    text-align: center;
-  }
-  .about-me p {
-    margin-top: 10px;
-    padding-bottom: 35px;
-    font-size: 15px;
-    text-align: justify;
-  }
-  /*perfiles */
-  .profile {
-    display: flex;
-    background-color: #5a5a5a;
-    width: 95%;
-    justify-content: center;
-    align-items: center;
-    margin: 25px 0;
-    border-radius: 10px;
-    box-shadow: #fff 2px 2px 5px;
-  }
-  .profile-img {
-    margin: 30px;
-    border-radius: 25%;
-    height: 125px;
-    width: 125px;
-  }
-  .profile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding-right: 25px;
-  }
-  .profile-container p,
-  h1,
-  h2 {
-    text-align: justify;
-  }
-  /* Seccion de servicios */
 
-
-.services li {
-  padding: 0;
-  list-style: none;
-  margin-top: 10px;
-  font-size: 18px;
-  text-align: justify;
-}
 /* footer */
   footer {
     background-color: #000000;
@@ -619,32 +471,6 @@ footer {
     display: block;
   }
 
-  /* targetas de presentacion */
-  .profile {
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-  }
-  .profile-img {
-    margin: 30px 0 0 0;
-    padding: 0;
-    border-radius: 25%;
-    height: 200px;
-    width: 200px;
-  }
-  .profile-container {
-    display: flex;
-    align-items: center;
-    padding: 0 25px 0 25px;
-    margin: 0 0 10px 0;
-  }
-  .profile-container p,
-  h1,
-  h2 {
-    text-align: justify;
-    margin: 0;
-    padding: 0;
-  }
 
   footer {
     color: #fff;
