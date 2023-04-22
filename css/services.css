@@ -1,10 +1,13 @@
 .services {
+  color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 0 60px 0;
+  position: relative;
+  top: 75px;
+  padding: 60px;
   height: 100%;
-  width: 80%;
+  width: 100%;
 }
 
 .services h1 {
@@ -25,6 +28,7 @@
 }
 
 .services li {
+
   padding: 0;
   list-style: none;
   margin-top: 10px;
@@ -33,6 +37,10 @@
 }
 
 @media (max-width: 1600px) {
+  .services{
+    top: 200px;
+
+  }
   .services li {
     padding: 0;
     list-style: none;

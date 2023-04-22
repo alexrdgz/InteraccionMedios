@@ -6,12 +6,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(../images/cover.webp);
-  background-attachment: fixed;
-  background-size: cover;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.25);
-  background-blend-mode: multiply;
+  background-color: #fff;
 }
 
 .header {
@@ -80,34 +76,71 @@ body {
   display: none;
   cursor: pointer;
 }
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 .logo {
   height: 60px;
 }
+main {
+  margin-top: 0px;
+  color: #ffffff;
+  padding: 0;
+}
+
+.video-container {
+
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 15%;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 350px;
+}
+
+#en-vivo {
+  display: none;
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 10px;
+}
+#en-vivo:hover{
+  cursor: pointer;
+  background-color: #fff;
+  color: red;
+}
 
 .imagen-del-dia {
+  background-color: #f3f3f3;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 80px;
-  height: 900px;
+  padding: 80px;
   justify-content: center;
+  height: max-content;
+  object-fit: contain;
+
 }
 .imagen-del-dia h1 {
+  color: #4e4e4e;
   margin-bottom: 50px;
   font-size: 40px;
 }
 .imagen-del-dia img {
   display: none;
-  padding-bottom: 40px;
-  max-width: 80%;
+  width: 70%;
+  box-shadow: #161616 5px 5px 5px;
 }
 
 /* slider */
@@ -120,6 +153,7 @@ main {
   justify-content: center;
 }
 .events h1 {
+  color: #4e4e4e;
   margin-bottom: 50px;
   font-size: 40px;
 }
@@ -170,14 +204,13 @@ main {
   color: #000;
 }
 .slider-prev {
-  left: 50px;
+  left: 200px;
 }
 
 .slider-next {
-  right: 50px;
+  right: 200px;
 }
 
-/* slider botons */
 
 /* Estilos para el elemento modal */
 .modal {
@@ -215,43 +248,6 @@ main {
   cursor: pointer;
 }
 
-/* Seccion de informacion de contacto */
-
-.barra-reproduccion {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  bottom: 0;
-  box-sizing: border-box;
-  width: 300px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: transparent;
-}
-
-.barra-reproduccion img {
-  position: absolute;
-  top: -17px;
-  width: 100%;
-  height: 115px;
-  border-radius: 5% 5%;
-}
-
-.img-player {
-  position: absolute;
-  display: flex;
-  top: 0px;
-  height: 100px;
-  width: 300px;
-}
-
-.barra-reproduccion iframe {
-  border: none;
-  padding: 0;
-  margin: 0;
-  border-radius: 0;
-}
 
 /* footer */
 
@@ -259,15 +255,16 @@ footer {
   background-color: #000000;
   color: #fff;
   padding: 40px 0;
+  margin: 0;
 }
 
 .container-footer {
-  max-width: 1280px;
-  margin: 0 100px;
-  padding: 0 auto;
+width: 100%;
   box-sizing: border-box;
   display: flex;
-  justify-content: end;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-info h3,
@@ -309,67 +306,73 @@ footer {
   background-color: #fff;
   color: #333;
 }
-/* Estilos para pantallas de escritorio */
-@media only screen and (min-width: 768px) {
-  .barra-reproduccion {
-    left: 0;
-    bottom: 0;
-    margin: 0 0 5px 5px;
-    width: 300px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-}
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 767px) {
-  .barra-reproduccion {
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-  }
-}
 
 @media (max-width: 1600px) {
   body {
     padding: 0px 0;
   }
-
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 15%;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 235px;
+  }
+  
   /* slider */
 
   .events {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 550px;
-    justify-content: center;
+    height: 500px;
+
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
   .events h1 {
-    margin-top: 80px;
-    margin-bottom: 30px;
+    margin: 0 0 10px 0;
     font-size: 30px;
   }
-  /* programacion */
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .slider-prev {
+    left: 300px;
+  }
+  
+  .slider-next {
+    right: 300px;
+  }
+  
   .imagen-del-dia {
-    padding-top: 30px;
-    height: 800px;
+    height: 650px;
+
   }
   .imagen-del-dia h1 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 30px;
   }
   .imagen-del-dia img {
     display: none;
     padding-bottom: 40px;
-    max-width: 55%;
+    width: 50%;
   }
-
-/* footer */
+  
+  /* footer */
   footer {
     background-color: #000000;
     color: #fff;
     padding: 40px 0;
-    height: 200x;
+    height: 200px;
     display: flex;
     justify-content: flex-end;
     align-items: self-end;
@@ -438,43 +441,65 @@ footer {
     left: 0;
   }
 
-  .imagen-del-dia {
-    height: 600px;
-    padding-top: 0px;
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 15%;
   }
-  .imagen-del-dia img {
-    max-width: 100%;
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
   }
-  .imagen-del-dia h1 {
-    margin-bottom: 50px;
-    font-size: 30px;
-  }
+  
+  /* slider */
 
+  .events {
+    padding-top: 275px;
+    height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
   .events h1 {
-    margin-bottom: 50px;
+    margin: 0 0 10px 0;
     font-size: 30px;
   }
   .slider {
-    margin-top: 25px;
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 300px;
     overflow: hidden;
   }
-  .slider-wrapper img {
-    height: auto;
-    object-fit: cover;
-  }
 
-  .slider-prev,
+  .slider-prev {
+    left: 20px;
+  }
+  
   .slider-next {
-    display: block;
+    right: 20px;
   }
+  
+  .imagen-del-dia {
+    height: 100%;
 
+  }
+  .imagen-del-dia h1 {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  .imagen-del-dia img {
+    display: none;
+    padding-bottom: 40px;
+    width: 100%;
+  }
 
   footer {
     color: #fff;
-    padding: 50px 0 250px 0;
+
     height: 100%;
     justify-content: center;
   }
@@ -514,5 +539,4 @@ footer {
     background-color: #fff;
     color: #333;
   }
-  
 }

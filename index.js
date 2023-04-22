@@ -10,7 +10,6 @@ navToggle.addEventListener("click", (event) => {
 navLinks.forEach(link => {
   link.addEventListener("click", () => {
     navMenu.classList.remove("nav-menu_visible");
-    // Aquí reemplaza "href" por el atributo que uses en tus links
     const href = link.getAttribute("href");
     window.location.href = href;
   })
@@ -115,3 +114,18 @@ modal.addEventListener("click", (event) => {
     modal.style.display = "none";
   }
 });
+
+
+function mostrarEnVivo() {
+  var ahora = new Date();
+  var dia = ahora.getDay();
+  var hora = ahora.getHours();
+  
+  if ((dia == 4 || dia == 5) && hora == 20) {
+    document.getElementById("en-vivo").style.display = "block";
+  } else {
+    document.getElementById("en-vivo").style.display = "none";
+  }
+}
+
+setInterval(mostrarEnVivo, 15000);
