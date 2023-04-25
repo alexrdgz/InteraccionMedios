@@ -47,53 +47,35 @@ function cambiarImagen() {
 }
 
 
-const sliderWrapper = document.querySelector(".slider-wrapper");
-const sliderPrev = document.querySelector(".slider-prev");
-const sliderNext = document.querySelector(".slider-next");
-let currentPosition = 0;
 
-function moveSlider(position) {
-  currentPosition = position;
-  sliderWrapper.style.left = `-${currentPosition}00%`;
-}
-
-sliderPrev.addEventListener("click", () => {
-  if (currentPosition > 0) {
-    currentPosition--;
-    moveSlider(currentPosition);
-  }
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  loop: true
 });
 
-sliderNext.addEventListener("click", () => {
-  if (currentPosition < 2) {
-    currentPosition++;
-    moveSlider(currentPosition);
-  } else {
-    currentPosition = 0;
-    moveSlider(currentPosition);
-  }
+swiper.on('reachEnd', function() {
+  swiper.autoplay.stop();
+  swiper.autoplay.start();
 });
 
-setInterval(() => {
-  if (currentPosition < 2) {
-    currentPosition++;
-    moveSlider(currentPosition);
-  } else {
-    currentPosition = 0;
-    moveSlider(currentPosition);
-  }
-}, 8000);
-
-
-
-
-const sliderImages = document.querySelectorAll(".slider-wrapper img");
-const prevButton = document.querySelector(".slider-prev");
-const nextButton = document.querySelector(".slider-next");
-
+const sliderImages = document.querySelectorAll(".swiper-slide img");
 const modal = document.querySelector(".modal");
 const modalContent = document.querySelector(".modal-content");
 const closeModal = document.querySelector(".close");
+
 
 let selectedIndex = 0;
 
@@ -129,3 +111,7 @@ function mostrarEnVivo() {
 }
 
 setInterval(mostrarEnVivo, 15000);
+
+
+
+

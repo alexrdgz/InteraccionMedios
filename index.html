@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image" href="./images/Logo-pata.webp">
     <script src="https://kit.fontawesome.com/5f222cc947.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Interaccion Medios</title>
 </head>
 
@@ -21,7 +22,8 @@
             <ul class="nav-menu">
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home"
                         href="https://alexrdgz.github.io/InteraccionMedios.github.io/">Inicio</a></li>
-                <li class="nav-menu-item"><a class="nav-link nav-menu-link players" href="./player.html">Escuchar Ahora <img id="antenaradio" src="./images/antena.png" alt=""></a></li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link players" href="./player.html">RADIO
+                        <i class="fa-solid fa-tower-broadcast"></i></a></li>
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home"
                         href="#imagen-del-dia">PROGRAMACIÓN</a></li>
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="./about.html">Acerca de nosotros</a>
@@ -33,33 +35,27 @@
 
     <main>
         <section>
-            <div class="video-container">
-                <iframe src="https://zeno.fm/player/Interaccion" width="300" height="100" frameborder="0" scrolling="no"
-                    allow="autoplay"></iframe>
-            </div>
-        </section>
-        <section>
             <div id="en-vivo">¡EN VIVO!</div>
         </section>
         <section class="events">
-            <h1>PROXIMOS EVENTOS</h1>
-            <div class="slider">
-                <div class="slider-wrapper">
-                    <img class="slider-slide" src="./images/Poster-Playlist.png" alt="Imagen 1" data-index="0">
-                    <img class="slider-slide" src="./images/el-cuartito-victor.webp" alt="Imagen 2" data-index="1">
-                    <img class="slider-slide" src="./images/Trio-Coatepec.jpg" alt="Imagen 3" data-index="2">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/Poster-Playlist.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/el-cuartito-victor.webp" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/Trio-Coatepec.jpg" alt=""></div>
+                    <!-- <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div> -->
                 </div>
-                <button class="slider-prev">
-                    <p><i class="fa-solid fa-circle-left"></i></p>
-                </button>
-                <button class="slider-next">
-                    <p><i class="fa-solid fa-circle-right"></i></p>
-                </button>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content">
-            </div>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
         </section>
         <section class="imagen-del-dia" id="imagen-del-dia">
             <h1>PROGRAMACION DE HOY</h1>
