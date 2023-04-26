@@ -8,7 +8,7 @@ main {
   top: 0px;
   min-height: 100vh;
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 
 .about-me {
@@ -24,9 +24,11 @@ justify-content: center;
   text-align: justify;
   align-items: center;
 }
-.container-1 p{
+
+.container-1 p {
   padding: 20px 35px;
 }
+
 /* Perfiles */
 .profiles {
   height: max-content;
@@ -50,13 +52,45 @@ justify-content: center;
 }
 
 .profile-img {
-  margin: 20px;
-  border-radius: 25%;
+  margin: 30px 15px 0 15px;
+  border-radius: 25px;
   width: 125px;
+  height: 125px;
+  object-fit: cover;
 }
 
 .profile-container {
-padding: 10px 20px;
+  padding: 10px 20px;
+}
+
+.social-about {
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-about li {
+  list-style: none;
+}
+
+.social-about a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.social-about a:hover {
+  background-color: #fff;
+  color: #000000;
 }
 
 .profile-container p,
@@ -64,6 +98,7 @@ h1,
 h2 {
   text-align: justify;
 }
+
 
 
 footer {
