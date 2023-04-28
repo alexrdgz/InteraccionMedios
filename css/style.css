@@ -110,6 +110,10 @@ main {
   color: #ffffff;
   padding: 0;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #en-vivo {
@@ -133,15 +137,23 @@ main {
   color: red;
 }
 
+.first-part {
+  width: 75%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 /* slider */
 .events {
   height: 500px;
+  width: 70%;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 .swiper {
-  width: 70%;
+  width: 80%;
   height: 100%;
 }
 
@@ -175,7 +187,35 @@ main {
   object-fit: contain;
 }
 
+.grabaciones {
+  color: #ffffff;
+  padding: 20px 0 0 0;
+  width: 100%;
+  margin: 0;
+  border-radius: 10px;
+}
+.grabaciones ul{
+  margin: 0;
+  padding: 0;
+}
+.grabaciones li {
+  text-align: start;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  list-style: none;
 
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.grabaciones li:hover{
+  cursor: pointer;
+}
+.grabaciones p{
+  color: #83c5f7;
+}
 
 .imagen-del-dia {
   display: flex;
@@ -327,6 +367,16 @@ footer {
     left: 0;
   }
 
+  .first-part {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .events {
+    width: 100%;
+  }
 
   .swiper {
     width: 100%;
@@ -335,6 +385,11 @@ footer {
   .swiper-slide p {
     font-size: 15px;
     padding: 10px 20px 30px 20px;
+  }
+
+  .grabaciones {
+    padding: 40px 0 40px 0;
+    width: 90%;
   }
 
   .imagen-del-dia {
