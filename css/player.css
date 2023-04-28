@@ -10,17 +10,20 @@
     font-weight: bold;
     z-index: 1000;
 }
-.social ul{
+
+.social ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     justify-content: center;
 }
-.social li{
+
+.social li {
     margin-right: 10px;
 }
-.social a{
+
+.social a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +36,8 @@
     transition: background-color 0.3s;
     text-decoration: none;
 }
-.social a:hover{
+
+.social a:hover {
     background-color: #fff;
     color: #333;
 }

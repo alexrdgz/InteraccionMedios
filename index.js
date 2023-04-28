@@ -71,32 +71,6 @@ swiper.on('reachEnd', function() {
   swiper.autoplay.start();
 });
 
-const sliderImages = document.querySelectorAll(".swiper-slide img");
-const modal = document.querySelector(".modal");
-const modalContent = document.querySelector(".modal-content");
-const closeModal = document.querySelector(".close");
-
-
-let selectedIndex = 0;
-
-sliderImages.forEach((image, index) => {
-  image.addEventListener("click", () => {
-    selectedIndex = index;
-    modalContent.src = image.src;
-    modal.style.display = "block";
-  });
-});
-
-closeModal.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
-modal.addEventListener("click", (event) => {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-});
-
 
 function mostrarEnVivo() {
   var ahora = new Date();
@@ -108,9 +82,14 @@ function mostrarEnVivo() {
   } else {
     document.getElementById("en-vivo").style.display = "none";
   }
+  if ((dia == 5) && hora == 21) {
+    document.getElementById("en-vivo").style.display = "block";
+  } else {
+    document.getElementById("en-vivo").style.display = "none";
+  }
 }
 
-setInterval(mostrarEnVivo, 15000);
+setInterval(mostrarEnVivo, 2000);
 
 
 
