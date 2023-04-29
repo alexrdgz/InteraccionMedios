@@ -15,14 +15,14 @@ body {
 }
 
 .header {
-  background-color: #ffffff;
+  background-color: #05355a;
   height: 60px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
-  box-shadow: #4e4e4e 2px 4px 4px;
+  box-shadow: #e4196e 1px 1px 2px;
 }
 
 .nav {
@@ -33,7 +33,7 @@ body {
 }
 
 .nav-link {
-  color: #000000;
+  color: #ffff;
   text-decoration: none;
 }
 
@@ -81,17 +81,17 @@ body {
 .nav-menu-link:hover,
 .nav-menu-link_active {
   color: #ffff;
-  background-color: #3a3a3a;
+  background-color: #e4196e;
   transition: 0.5s;
 }
 
 .players:hover {
   color: red;
-  background-color: white;
+  background-color: #05355a;
 }
 
 .nav-toggle {
-  color: rgb(0, 0, 0);
+  color: #e4196e;
   background: none;
   border: none;
   font-size: 30px;
@@ -169,15 +169,16 @@ main {
 .swiper-slide p {
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
-  color: #000;
+  color: #ffffff;
   position: absolute;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #000000);
   /* background-blend-mode: multiply; */
   width: 100%;
   padding: 10px 80px 25px 80px;
   text-align: start;
 }
+
 
 .swiper-slide img {
   display: block;
@@ -200,18 +201,20 @@ main {
 }
 .grabaciones li {
   text-align: start;
-  color: #000000;
+  color: #ffffff;
   font-weight: bold;
   text-decoration: none;
   padding: 10px;
   list-style: none;
 
   margin: 10px;
-  background-color: #ffffff;
+  background-color: #05355a;
   border-radius: 10px;
 }
 .grabaciones li:hover{
   cursor: pointer;
+  color: #e4196e;
+    transition: 0.5s;
 }
 .grabaciones p{
   color: #83c5f7;
@@ -245,7 +248,7 @@ main {
 /* footer */
 
 footer {
-  background-color: #000000;
+  background-color: #05355a;
   color: #fff;
   padding: 40px 0;
   margin: 0;
@@ -289,7 +292,7 @@ footer {
   height: 40px;
   color: #fff;
   border-radius: 50%;
-  background-color: #000000;
+  background-color: #05355a;
   font-size: 20px;
   transition: background-color 0.3s;
   text-decoration: none;
@@ -307,7 +310,7 @@ footer {
   }
 
   .header {
-    background-color: #ffffff;
+    background-color: #05355a;
     height: 60px;
     position: fixed;
     width: 100%;
@@ -330,7 +333,7 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-right: 20px;
-    background-color: #f9f8ff;
+    background-color: #05355a;
     position: fixed;
     left: 0;
     top: 60px;
@@ -355,7 +358,7 @@ footer {
   .nav-menu-link:hover,
   .nav-menu-link_active {
     background: none;
-    color: #83c5f7;
+    color: #e4196e;
     transition: 0.5s;
   }
 

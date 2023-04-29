@@ -44,11 +44,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #5a5a5a;
+  background-color: #05355a;
   width: 300px;
   margin: 20px;
   border-radius: 10px;
-  box-shadow: #fff 2px 2px 5px;
+  box-shadow: #e4196e 1px 1px 3px;
 }
 
 .profile-img {
