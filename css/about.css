@@ -4,16 +4,15 @@
 }
 
 main {
-  position: relative;
-  top: 0px;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
+  margin-bottom: 80px;
+  top: 100px;
 }
 
 .about-me {
   flex-wrap: wrap;
-  width: 80%;
+  width: 100%;
   margin-bottom: 80px;
   height: max-content;
 }

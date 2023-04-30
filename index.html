@@ -29,7 +29,7 @@
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link players" href="./player.html">RADIO
                         <i class="fa-solid fa-tower-broadcast"></i></a></li>
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home"
-                        href="#imagen-del-dia">PROGRAMACIÓN</a></li>
+                        href="#programas">PROGRAMAS</a></li>
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="./about.html">Acerca de nosotros</a>
                 </li>
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="#contact">Contacto</a></li>
@@ -46,25 +46,28 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <p>Escucha el estreno de INDIE STEREO por @interaccionmedios. <br>
-                                Programa dedicado a la escena musical independiente, en voz de Mon Gonzalez y Mike
-                                Aguilar. <br>
-                                TODOS LOS VIERNES A LAS 21 hrs.</p><img src="./images/indiestereo.jpeg" alt="">
+                            <img src="./images/indiestereo.jpeg" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <p></p><img src="./images/Poster-Playlist.png" alt="">
+                            <img src="./images/Poster-Playlist.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <p></p><img src="./images/el-cuartito-victor.webp" alt="">
+                            <img src="./images/el-cuartito-victor.webp" alt="">
                         </div>
-                        <div class="swiper-slide">
-                            <p></p><img src="./images/Trio-Coatepec.jpg" alt="">
+                        <div class="swiper-slide imagen-del-dia" id="imagen-del-dia">
+                            <img id="lunes" src="./images/Lunes.jpg" alt="Programacion del lunes">
+                            <img id="martes" src="./images/martes.jpg" alt="Programacion del martes">
+                            <img id="miercoles" src="./images/miercoles.jpg" alt="Programacion del miércoles">
+                            <img id="jueves" src="./images/jueves.jpg" alt="Programacion del jueves">
+                            <img id="viernes" src="./images/viernes.jpg" alt="Programacion del viernes">
+                            <img id="sabado" src="./images/sabado.jpg" alt="Programacion del sábado">
+                            <img id="domingo" src="./images/domingo.webp" alt="Programacion del domingo">
                         </div>
                         <!-- <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div> -->
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div> -->
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -79,28 +82,49 @@
 
                             28-04-2023</p>
                     </li>
-                    <li>▶︎ PLAY LIST <p> 28-04-2023</p>
+                    <li>▶︎ PLAYLIST <p> 28-04-2023</p>
                     </li>
                     <li>▶︎ EL CUARTITO DEL 55 <p> 27-04-2023</p>
                     </li>
-                    <li>▶︎ PLAY LIST <p> 21-04-2023</p>
+                    <li>▶︎ PLAYLIST <p> 21-04-2023</p>
                     </li>
                     <li>▶︎ EL CUARTITO DEL 55 <p> 20-04-2023</p>
                     </li>
                 </ul>
             </div>
         </section>
-        <section class="imagen-del-dia" id="imagen-del-dia">
-            <h1>PROGRAMACIÓN DE HOY</h1>
-            <img id="lunes" src="./images/Lunes.jpg" alt="Programacion del lunes">
-            <img id="martes" src="./images/martes.jpg" alt="Programacion del martes">
-            <img id="miercoles" src="./images/miercoles.jpg" alt="Programacion del miércoles">
-            <img id="jueves" src="./images/jueves.jpg" alt="Programacion del jueves">
-            <img id="viernes" src="./images/viernes.jpg" alt="Programacion del viernes">
-            <img id="sabado" src="./images/sabado.jpg" alt="Programacion del sábado">
-            <img id="domingo" src="./images/domingo.webp" alt="Programacion del domingo">
+        <section class="second-part">
+            <div class="program" id="programas">
+                <h1>PROGRAMAS</h1>
+                <div class="container-program">
+                    <h3>INDIE STEREO</h3>
+                    <div class="text">
+                        <img src="./images/indiestereo.jpeg" alt="">
+                        <p class="description-program">Programa dedicado a la escena musical independiente, en voz de @miguelobtsky y una
+                            servidora.</p>
+                        <p class="date-program">VIERNES A LAS 21 hrs.</p>
+                    </div>
+                </div>
+                <div class="container-program">
+                    <h3>PLAYLIST</h3>
+                    <div class="text">
+                        <img src="./images/Poster-Playlist.png" alt="">
+                        <p class="description-program">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente corporis blanditiis
+                            ipsa! Eligendi, fuga. Autem.</p>
+                        <p class="date-program">VIERNES A LAS 20 hrs.</p>
+                    </div>
+                </div>
+                <div class="container-program">
+                    <h3>EL CUARTITO DEL 55</h3>
+                    <div class="text">
+                        <img src="./images/el-cuartito-victor.webp" alt="">
+                        <p class="description-program">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore hic necessitatibus a
+                            quos maiores dolores, est quibusdam id minus ipsam.</p>
+                        <p class="date-program">JUEVES A LAS 20 hrs.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-
     </main>
     <script defer src="./index.js"></script>
     <footer>
@@ -129,7 +153,5 @@
         </div>
     </footer>
 </body>
-
-
 
 </html>
