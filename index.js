@@ -82,7 +82,7 @@ function mostrarEnVivo() {
   } else {
     document.getElementById("en-vivo").style.display = "none";
   }
-  if ((dia == 5) && hora == 21) {
+  if ((dia == 2) && hora == 16) {
     document.getElementById("en-vivo").style.display = "block";
   } else {
     document.getElementById("en-vivo").style.display = "none";
