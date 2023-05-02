@@ -10,6 +10,30 @@ main {
   top: 100px;
 }
 
+#en-vivo {
+  display: none;
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+}
+#en-vivo a{
+text-decoration: none;
+color: rgb(255, 255, 255);
+}
+
+#en-vivo a:hover {
+  cursor: pointer;
+  color: red;
+}
+
 .about-me {
   flex-wrap: wrap;
   width: 100%;
@@ -60,6 +84,13 @@ main {
 
 .profile-container {
   padding: 10px 20px;
+}
+.profile-container h1{
+  font-size: 22px;
+}
+.profile-container h2{
+  font-size: 18px;
+  padding: 10px 0;
 }
 
 .social-about {

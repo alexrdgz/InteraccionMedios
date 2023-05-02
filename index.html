@@ -25,7 +25,7 @@
                     style="color: #e4196e;"></i></button>
             <ul class="nav-menu">
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home"
-                        href="https://alexrdgz.github.io/InteraccionMedios.github.io/">Inicio</a></li>
+                        href="https://alexrdgz.github.io/InteraccionMedios.github.io/"><i class="fa-solid fa-house"></i> Inicio</a></li>
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link players" href="./player.html">RADIO
                         <i class="fa-solid fa-tower-broadcast"></i></a></li>
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home"
@@ -40,6 +40,18 @@
     <main>
         <section>
             <div id="en-vivo">¡EN VIVO!</div>
+        </section>
+        <section>
+            <div class="audio-container">
+                <audio id="audio-stream" src="https://stream.zeno.fm/zzx9y55gbrduv" autoplay="true"></audio>
+                <button id="play-btn" class="play-btn">
+                    <i class="fas fa-play fa-2x"></i>
+                </button>
+                <button id="pause-btn" class="pause-btn">
+                    <i class="fas fa-pause fa-2x"></i>
+                </button>
+                <input id="volume-control" type="range" min="0" max="100" value="50">
+            </div>
         </section>
         <section class="first-part">
             <div class="events">
@@ -100,7 +112,8 @@
                     <h3>INDIE STEREO</h3>
                     <div class="text">
                         <img src="./images/indiestereo.jpeg" alt="">
-                        <p class="description-program">Programa dedicado a la escena musical independiente, en voz de @miguelobtsky y una
+                        <p class="description-program">Programa dedicado a la escena musical independiente, en voz de
+                            @miguelobtsky y una
                             servidora.</p>
                         <p class="date-program">VIERNES A LAS 21 hrs.</p>
                     </div>
@@ -109,7 +122,8 @@
                     <h3>PLAYLIST</h3>
                     <div class="text">
                         <img src="./images/Poster-Playlist.png" alt="">
-                        <p class="description-program">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente corporis blanditiis
+                        <p class="description-program">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Sapiente corporis blanditiis
                             ipsa! Eligendi, fuga. Autem.</p>
                         <p class="date-program">VIERNES A LAS 20 hrs.</p>
                     </div>
@@ -118,7 +132,8 @@
                     <h3>EL CUARTITO DEL 55</h3>
                     <div class="text">
                         <img src="./images/el-cuartito-victor.webp" alt="">
-                        <p class="description-program">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore hic necessitatibus a
+                        <p class="description-program">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                            hic necessitatibus a
                             quos maiores dolores, est quibusdam id minus ipsam.</p>
                         <p class="date-program">JUEVES A LAS 20 hrs.</p>
                     </div>
