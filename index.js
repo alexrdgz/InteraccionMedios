@@ -76,13 +76,14 @@ function mostrarEnVivo() {
   var ahora = new Date();
   var dia = ahora.getDay();
   var hora = ahora.getHours();
+  var minutos = ahora.getMinutes();
   
   if ((dia == 4 || dia == 5) && hora == 20) {
     document.getElementById("en-vivo").style.display = "block";
   } else {
     document.getElementById("en-vivo").style.display = "none";
   }
-  if ((dia == 2) && hora == 16) {
+  if ((dia == 5) && hora == 21 && minutos < 30) {
     document.getElementById("en-vivo").style.display = "block";
   } else {
     document.getElementById("en-vivo").style.display = "none";

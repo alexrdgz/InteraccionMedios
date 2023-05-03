@@ -1,61 +1,67 @@
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/lunaradio.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/lunaradio.js"></script>
 
 
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="stylesheet" href="./css/player.css" .css">
-	<link rel="icon" type="image" href="./images/im.jpg">
-	<script src="https://kit.fontawesome.com/5f222cc947.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/player.css" .css">
+  <link rel="icon" type="image" href="./images/im.jpg">
+  <script src="https://kit.fontawesome.com/5f222cc947.js" crossorigin="anonymous"></script>
 
-	<title>Radio Online - Interacción Medios</title>
+  <title>Radio Online - Interacción Medios</title>
 </head>
 
 <body style="margin:60px 0 0 0">
-	<header class="header">
-		<nav class="nav">
-			<a href="https://alexrdgz.github.io/InteraccionMedios.github.io/">
-				<img src="./images/im.jpg" class="logo nav-link"></a>
-			<button class="nav-toggle" aria-label="abrir menu"><i class="fa-solid fa-bars"
-					style="color: #e4196e;"></i></button>
-			<ul class="nav-menu">
-				<li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home"
-						href="https://alexrdgz.github.io/InteraccionMedios.github.io/"><i class="fa-solid fa-house"></i> INICIO</a></li>
-				<li class="nav-menu-item"><a class="nav-link nav-menu-link players" href="./player.html">RADIO
-						<img id="antenaradio" src="./images/antena.png" alt=""></a></li>
-				<li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home"
-						href="index.html#programas">PROGRAMAS</a></li>
-				<li class="nav-menu-item"><a class="nav-link nav-menu-link" href="./about.html">ACERCA DE NOSOTROS</a>
-				</li>
-				<li class="nav-menu-item"><a class="nav-link nav-menu-link" href="./about.html#contact">CONTACTO</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<section>
-		<div id="en-vivo">¡EN VIVO!</div>
-	</section>
-	<script src="./index.js"></script>
-	<div class="social">
-		<ul>
-			<li><a href="https://www.facebook.com/profile.php?id=100081777163941" target="_blank"><i
-						class="fab fa-facebook"></i></a></li>
-			<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-			<li><a href="https://www.instagram.com/interaccionmedios/" target="_blank"><i
-						class="fab fa-instagram"></i></a></li>
-			<li><a href="https://www.youtube.com/@InterAccion_Medios" target="_blank"><i class="fab fa-youtube"></i></a>
-			</li>
-			<li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+  <header class="header">
+    <nav class="nav">
+      <a href="https://alexrdgz.github.io/InteraccionMedios.github.io/">
+        <img src="./images/im.jpg" class="logo nav-link"></a>
 
-		</ul>
-	</div>
+      <a class="player-radio" href="./player.html">RADIO
+        <i class="fa-solid fa-tower-broadcast"></i>
+      </a>
 
-	<div id="lunaradio" style='width:100%; height:100%;background-image: url("img/fondo.jpg"); background-repeat: no-repeat; background-size: cover; background-position: center;
+      <button class="nav-toggle" aria-label="abrir menu"><i class="fa-solid fa-bars"
+          style="color: #e4196e;"></i></button>
+      <ul class="nav-menu">
+        <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home"
+            href="https://alexrdgz.github.io/InteraccionMedios.github.io/"><i class="fa-solid fa-house"></i>
+            INICIO</a></li>
+        <li class="nav-menu-item"><a class="nav-link nav-menu-link players" href="./player.html">RADIO
+            <img id="antenaradio" src="./images/antena.png" alt=""></a></li>
+        <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home"
+            href="index.html#programas">PROGRAMAS</a></li>
+        <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="./about.html">ACERCA DE NOSOTROS</a>
+        </li>
+        <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="./about.html#contact">CONTACTO</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <div id="en-vivo">¡EN VIVO!</div>
+  </section>
+  <script src="./index.js"></script>
+  <div class="social">
+    <ul>
+      <li><a href="https://www.facebook.com/profile.php?id=100081777163941" target="_blank"><i
+            class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="https://www.instagram.com/interaccionmedios/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </li>
+      <li><a href="https://www.youtube.com/@InterAccion_Medios" target="_blank"><i class="fab fa-youtube"></i></a>
+      </li>
+      <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+
+    </ul>
+  </div>
+
+  <div id="lunaradio" style='width:100%; height:100%;background-image: url("img/fondo.jpg"); background-repeat: no-repeat; background-size: cover; background-position: center;
 -webkit-border-top-left-radius: 0px;
   -webkit-border-top-right-radius: 0px;
   -webkit-border-bottom-right-radius: 0px;
@@ -70,12 +76,12 @@
   border-bottom-left-radius: 0px;
   border: none;'>
 
-		<script src="js/jquery-3.2.1.min.js" type="3bc5e4e5245e387f3290c38f-text/javascript"></script>
-		<script src="js/lunaradio.min.js" type="3bc5e4e5245e387f3290c38f-text/javascript"></script>
+    <script src="js/jquery-3.2.1.min.js" type="3bc5e4e5245e387f3290c38f-text/javascript"></script>
+    <script src="js/lunaradio.min.js" type="3bc5e4e5245e387f3290c38f-text/javascript"></script>
 
 
 
-		<script type="3bc5e4e5245e387f3290c38f-text/javascript">
+    <script type="3bc5e4e5245e387f3290c38f-text/javascript">
 $("#lunaradio").lunaradio({
 	
 	userinterface: "big",
@@ -118,6 +124,6 @@ $("#lunaradio").lunaradio({
 	autoplay:"true",
 });
 </script>
-		<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
-			data-cf-settings="3bc5e4e5245e387f3290c38f-|49" defer=""></script>
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
+      data-cf-settings="3bc5e4e5245e387f3290c38f-|49" defer=""></script>
 </body>

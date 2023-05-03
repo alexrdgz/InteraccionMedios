@@ -24,6 +24,9 @@ main {
   font-size: 18px;
   border-radius: 10px;
 }
+#en-vivo:hover{
+  background-color: #fff;
+}
 #en-vivo a{
 text-decoration: none;
 color: rgb(255, 255, 255);
@@ -36,7 +39,7 @@ color: rgb(255, 255, 255);
 
 .about-me {
   flex-wrap: wrap;
-  width: 100%;
+  width: 80%;
   margin-bottom: 80px;
   height: max-content;
 }
@@ -46,10 +49,13 @@ color: rgb(255, 255, 255);
   flex-direction: column;
   text-align: justify;
   align-items: center;
+
+
 }
 
 .container-1 p {
-  padding: 20px 35px;
+  margin: 0;
+  padding: 20px 20px;
 }
 
 /* Perfiles */
@@ -68,33 +74,36 @@ color: rgb(255, 255, 255);
   flex-direction: column;
   align-items: center;
   background-color: #05355a;
-  width: 300px;
-  margin: 20px;
+  width: 250px;
+  margin: 20px 10px 10px 10px;
   border-radius: 10px;
-  box-shadow: #e4196e 1px 1px 3px;
+  box-shadow: #000000 2px 2px 4px;
 }
 
 .profile-img {
+  padding: 0;
   margin: 30px 15px 0 15px;
   border-radius: 25px;
-  width: 125px;
-  height: 125px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
 }
 
 .profile-container {
-  padding: 10px 20px;
+  padding: 5px 15px 15px 15px;
+  margin: 0;
 }
 .profile-container h1{
-  font-size: 22px;
+  font-size: 16px;
+  text-align: center;
 }
-.profile-container h2{
-  font-size: 18px;
+.profile-container h2, p{
+  font-size: 14px;
   padding: 10px 0;
 }
 
 .social-about {
-  margin: 10px 0;
+  margin-bottom:10px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -133,4 +142,12 @@ h2 {
 
 footer {
   width: 100%;
+}
+@media (max-width: 768px){
+  .about-me{
+    width: 100%;
+  }
+  .profile{
+    width: 85%;
+  }
 }
