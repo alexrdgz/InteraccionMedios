@@ -15,18 +15,27 @@ body {
   background-attachment: fixed;
 }
 
-p {
+h1 {
   width: 80%;
   text-align: center;
   position: absolute;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  object-fit: cover;
   border-radius: 50%;
   font-size: 26px;
 }
-
+p{
+  background-color: #e4196e;
+  width: max-content;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-radius: 10px;
+  font-size: 26px;
+  padding: 2px 4px;
+}
 .portada {
   width: 300px;
   height: 300px;
@@ -163,10 +172,14 @@ input[type="range"]::-moz-range-thumb {
     top: 30%;
   }
 
-  p {
+  h1 {
+    top: 52%;
     font-size: 22px;
   }
+p{
 
+  font-size: 22px;
+}
   .audio-container {
     top: 80%;
     height: max-content;
