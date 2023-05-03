@@ -97,7 +97,8 @@ color: rgb(255, 255, 255);
   font-size: 16px;
   text-align: center;
 }
-.profile-container h2, p{
+.profile-container h2, 
+.profile-container p{
   font-size: 14px;
   padding: 10px 0;
 }
@@ -137,7 +138,11 @@ h1,
 h2 {
   text-align: justify;
 }
-
+.title-tec{
+  font-size: 24px;
+  text-align: center;
+  padding: 40px 0;
+}
 
 
 footer {

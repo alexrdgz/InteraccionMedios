@@ -130,7 +130,7 @@ playBtn.addEventListener('click', playAudio);
 pauseBtn.addEventListener('click', pauseAudio);
 volumeControl.addEventListener('input', changeVolume);
 
-showPauseBtn();
+showPlayBtn();
 
 
 

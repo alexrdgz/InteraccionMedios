@@ -7,7 +7,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
-  background-image: url(../img/FONDO.jpg);
+  background-image: url(../images/FONDO.jpg);
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   background-size: cover;
