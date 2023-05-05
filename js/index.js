@@ -101,7 +101,7 @@ function mostrarEnVivo() {
 setInterval(mostrarEnVivo, 2000);
 
 
-const streamUrl = 'https://stream.zeno.fm/zzx9y55gbrduv';
+const streamUrl = 'https://stream-073.zeno.fm/zzx9y55gbrduv?zs=aGD3fWEcRmm9r4U3xO2arQ';
 const audio = document.getElementById('audio-stream');
 const playBtn = document.getElementById('play-btn');
 const pauseBtn = document.getElementById('pause-btn');
