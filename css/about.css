@@ -96,7 +96,9 @@ color: rgb(255, 255, 255);
 .profile-container h1{
   font-size: 16px;
   text-align: center;
+  color: #e4196e;
 }
+
 .profile-container h2, 
 .profile-container p{
   font-size: 14px;

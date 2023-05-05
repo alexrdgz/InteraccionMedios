@@ -16,7 +16,7 @@
     <title>Interacción Medios</title>
 </head>
 
-<body> 
+<body>
     <!-- onload="cambiarImagen()" -->
     <header class="header">
         <nav class="nav">
@@ -66,25 +66,22 @@
             <div class="events">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./images/indiestereo.jpeg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./images/Poster-Playlist.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./images/el-cuartito-victor.webp" alt="">
+                        <div class="swiper-slide" id="video-slider-container">
+                                <video id="video-slider-1" autoplay loop controls controlsList="nodownload nofullscreen nodisplay"></video>
+                                <div class="controls">
+                                    <button id="prev-button"><i class="fa-solid fa-chevron-left"></i></button>
+                                    <button id="next-button"><i class="fa-solid fa-chevron-right"></i></button>
+                                </div>
                         </div>
                         <!-- <div class="swiper-slide">Slide 6</div>
             <div class="swiper-slide">Slide 7</div>
             <div class="swiper-slide">Slide 8</div>
             <div class="swiper-slide">Slide 9</div> -->
                     </div>
-                    <div class="swiper-button-next"></div>
+                    <!-- <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination"></div> -->
                 </div>
-                <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
             </div>
             <!-- <div class="swiper-slide imagen-del-dia" id="imagen-del-dia">
               <img id="lunes" src="./images/Lunes.jpg" alt="Programacion del lunes">

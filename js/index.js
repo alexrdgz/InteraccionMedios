@@ -16,60 +16,68 @@ navLinks.forEach(link => {
 });
 
 
+// const videos = [  { src: "./videos/INDIE STEREO.mp4", duration: 48000 },  { src: "./videos/vm.mp4", duration: 23000 },  { src:  "./videos/Promo PlayList v.mp4", duration: 20000 }];
 
-function cambiarImagen() {
-  var hoy = new Date().getDay();
-  var imagen = document.getElementById('martes');
+// let currentVideo = 0;
 
-  if (hoy === 0) {
-    imagen.src = "./images/domingo.webp";
-    imagen.alt = "Programacion del domingo";
-  } else if (hoy === 1) {
-    imagen.src = "./images/Lunes.jpg";
-    imagen.alt = "Programacion del lunes";
-  } else if (hoy === 2) {
-    imagen.src = "./images/martes.jpg";
-    imagen.alt = "Programacion del martes";
-  } else if (hoy === 3) {
-    imagen.src = "./images/miercoles.jpg";
-    imagen.alt = "Programacion del miércoles";
-  } else if (hoy === 4) {
-    imagen.src = "./images/jueves.jpg";
-    imagen.alt = "Programacion del jueves";
-  } else if (hoy === 5) {
-    imagen.src = "./images/viernes.jpg";
-    imagen.alt = "Programacion del viernes";
-  } else if (hoy === 6) {
-    imagen.src = "./images/sabado.jpg";
-    imagen.alt = "Programacion del sábado";
+// function playNextVideo(videoElement) {
+//   currentVideo++;
+//   if (currentVideo >= videos.length) {
+//     currentVideo = 0;
+//   }
+//   videoElement.src = videos[currentVideo].src;
+//   setTimeout(() => playNextVideo(videoElement), videos[currentVideo].duration);
+// }
+
+// // Iniciar el primer video
+// playNextVideo(document.getElementById("video-slider-1"));
+
+
+
+const videos = [
+  { src: "./videos/INDIE STEREO.mp4", duration: 48000 },
+  { src: "./videos/vm.mp4", duration: 23000 },
+  { src: "./videos/Promo PlayList v.mp4", duration: 20000 },
+];
+
+let currentVideo = 0;
+let timeoutId;
+
+function playNextVideo(videoElement) {
+  currentVideo++;
+  if (currentVideo >= videos.length) {
+    currentVideo = 0;
   }
-  imagen.style.display = "block";
+  videoElement.src = videos[currentVideo].src;
+  clearTimeout(timeoutId);
+  timeoutId = setTimeout(() => playNextVideo(videoElement), videos[currentVideo].duration);
 }
 
+const prevButton = document.getElementById("prev-button");
+const nextButton = document.getElementById("next-button");
+const videoElement = document.getElementById("video-slider-1");
 
-
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 10000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  loop: true
+prevButton.addEventListener("click", () => {
+  currentVideo--;
+  if (currentVideo < 0) {
+    currentVideo = videos.length - 1;
+  }
+  videoElement.src = videos[currentVideo].src;
+  clearTimeout(timeoutId);
+  timeoutId = setTimeout(() => playNextVideo(videoElement), videos[currentVideo].duration);
 });
 
-swiper.on('reachEnd', function() {
-  swiper.autoplay.stop();
-  swiper.autoplay.start();
+nextButton.addEventListener("click", () => {
+  currentVideo++;
+  if (currentVideo >= videos.length) {
+    currentVideo = 0;
+  }
+  videoElement.src = videos[currentVideo].src;
+  clearTimeout(timeoutId);
+  timeoutId = setTimeout(() => playNextVideo(videoElement), videos[currentVideo].duration);
 });
+
+playNextVideo(videoElement);
 
 
 function mostrarEnVivo() {
