@@ -35,9 +35,9 @@ navLinks.forEach(link => {
 
 
 const videos = [
-  { src: "./videos/INDIE STEREO.mp4", duration: 48000 },
+  { src: "./videos/is.mp4", duration: 48000 },
   { src: "./videos/vm.mp4", duration: 23000 },
-  { src: "./videos/Promo PlayList v.mp4", duration: 20000 },
+  { src: "./videos/pl.mp4", duration: 20000 },
 ];
 
 let currentVideo = 0;
