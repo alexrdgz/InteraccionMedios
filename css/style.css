@@ -82,12 +82,12 @@ body {
 .nav-menu-link_active {
   color: #ffff;
   background-color: #e4196e;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 
 .players:hover {
   color: #e4196e;
-  border: #e4196e solid 2px;
+  outline: #e4196e solid 4px;
   background-color: #05355a;
 }
 
@@ -516,7 +516,7 @@ footer {
     position: relative;
     height: max-content;
     top: 10px;
-    left: -20px;
+    left: -40px;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
