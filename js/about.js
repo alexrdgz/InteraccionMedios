@@ -15,7 +15,7 @@ navLinks.forEach((link) => {
   });
 });
 
-const streamUrl = "https://stream-073.zeno.fm/zzx9y55gbrduv?zs=aGD3fWEcRmm9r4U3xO2arQ";
+const streamUrl = "https://stream.zeno.fm/zzx9y55gbrduv";
 const audio = document.getElementById("audio-stream");
 const playBtn = document.getElementById("play-btn");
 const pauseBtn = document.getElementById("pause-btn");

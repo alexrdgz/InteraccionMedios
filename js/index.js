@@ -16,68 +16,100 @@ navLinks.forEach(link => {
 });
 
 
-// const videos = [  { src: "./videos/INDIE STEREO.mp4", duration: 48000 },  { src: "./videos/vm.mp4", duration: 23000 },  { src:  "./videos/Promo PlayList v.mp4", duration: 20000 }];
 
-// let currentVideo = 0;
+// function cambiarImagen() {
+//   var hoy = new Date().getDay();
+//   var imagen = document.getElementById('martes');
 
-// function playNextVideo(videoElement) {
-//   currentVideo++;
-//   if (currentVideo >= videos.length) {
-//     currentVideo = 0;
+//   if (hoy === 0) {
+//     imagen.src = "./images/domingo.webp";
+//     imagen.alt = "Programacion del domingo";
+//   } else if (hoy === 1) {
+//     imagen.src = "./images/Lunes.jpg";
+//     imagen.alt = "Programacion del lunes";
+//   } else if (hoy === 2) {
+//     imagen.src = "./images/martes.jpg";
+//     imagen.alt = "Programacion del martes";
+//   } else if (hoy === 3) {
+//     imagen.src = "./images/miercoles.jpg";
+//     imagen.alt = "Programacion del miércoles";
+//   } else if (hoy === 4) {
+//     imagen.src = "./images/jueves.jpg";
+//     imagen.alt = "Programacion del jueves";
+//   } else if (hoy === 5) {
+//     imagen.src = "./images/viernes.jpg";
+//     imagen.alt = "Programacion del viernes";
+//   } else if (hoy === 6) {
+//     imagen.src = "./images/sabado.jpg";
+//     imagen.alt = "Programacion del sábado";
 //   }
-//   videoElement.src = videos[currentVideo].src;
-//   setTimeout(() => playNextVideo(videoElement), videos[currentVideo].duration);
+//   imagen.style.display = "block";
 // }
 
-// // Iniciar el primer video
-// playNextVideo(document.getElementById("video-slider-1"));
 
 
-
-const videos = [
-  { src: "./videos/is.mp4", duration: 48000 },
-  { src: "./videos/vm.mp4", duration: 23000 },
-  { src: "./videos/pl.mp4", duration: 20000 },
-];
-
-let currentVideo = 0;
-let timeoutId;
-
-function playNextVideo(videoElement) {
-  currentVideo++;
-  if (currentVideo >= videos.length) {
-    currentVideo = 0;
-  }
-  videoElement.src = videos[currentVideo].src;
-  clearTimeout(timeoutId);
-  timeoutId = setTimeout(() => playNextVideo(videoElement), videos[currentVideo].duration);
-}
-
-const prevButton = document.getElementById("prev-button");
-const nextButton = document.getElementById("next-button");
-const videoElement = document.getElementById("video-slider-1");
-
-prevButton.addEventListener("click", () => {
-  currentVideo--;
-  if (currentVideo < 0) {
-    currentVideo = videos.length - 1;
-  }
-  videoElement.src = videos[currentVideo].src;
-  clearTimeout(timeoutId);
-  timeoutId = setTimeout(() => playNextVideo(videoElement), videos[currentVideo].duration);
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 10000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  loop: true
 });
 
-nextButton.addEventListener("click", () => {
-  currentVideo++;
-  if (currentVideo >= videos.length) {
-    currentVideo = 0;
-  }
-  videoElement.src = videos[currentVideo].src;
-  clearTimeout(timeoutId);
-  timeoutId = setTimeout(() => playNextVideo(videoElement), videos[currentVideo].duration);
+swiper.on('reachEnd', function() {
+  swiper.autoplay.stop();
+  swiper.autoplay.start();
 });
 
-playNextVideo(videoElement);
+
+
+
+
+var activeContainer = null;
+
+document.querySelectorAll('.container-program').forEach(function(container) {
+  var video = container.querySelector('video');
+  var image = container.querySelector('img');
+
+  container.addEventListener('click', function() {
+
+    if (activeContainer && activeContainer !== container) {
+      var activeVideo = activeContainer.querySelector('video');
+      var activeImage = activeContainer.querySelector('img');
+
+      activeVideo.currentTime = 0;
+      activeVideo.pause();
+      activeVideo.style.display = 'none';
+      activeImage.style.display = 'block';
+    }
+
+    activeContainer = container;
+
+    video.style.display = 'block';
+    image.style.display = 'none';
+
+    video.currentTime = 0;
+    video.play();
+  });
+
+  video.addEventListener('ended', function() {
+    video.style.display = 'none';
+    image.style.display = 'block';
+  });
+});
+
+
+
 
 
 function mostrarEnVivo() {
@@ -101,7 +133,7 @@ function mostrarEnVivo() {
 setInterval(mostrarEnVivo, 2000);
 
 
-const streamUrl = 'https://stream-073.zeno.fm/zzx9y55gbrduv?zs=aGD3fWEcRmm9r4U3xO2arQ';
+const streamUrl = 'https://stream.zeno.fm/zzx9y55gbrduv';
 const audio = document.getElementById('audio-stream');
 const playBtn = document.getElementById('play-btn');
 const pauseBtn = document.getElementById('pause-btn');

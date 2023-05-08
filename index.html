@@ -40,7 +40,7 @@
                 </li>
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="./about.html">ACERCA DE NOSOTROS</a>
                 </li>
-                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="#contact">CONTACTO</a></li>
+                <!-- <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="#contact">CONTACTO</a></li> -->
             </ul>
         </nav>
     </header>
@@ -66,22 +66,25 @@
             <div class="events">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" id="video-slider-container">
-                                <video id="video-slider-1" autoplay loop controls controlsList="nodownload nofullscreen nodisplay"></video>
-                                <div class="controls">
-                                    <button id="prev-button"><i class="fa-solid fa-chevron-left"></i></button>
-                                    <button id="next-button"><i class="fa-solid fa-chevron-right"></i></button>
-                                </div>
+                        <div class="swiper-slide">
+                            <img src="./images/el-cuartito-victor.webp" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/Poster-Playlist.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/indiestereo.jpeg" alt="">
                         </div>
                         <!-- <div class="swiper-slide">Slide 6</div>
             <div class="swiper-slide">Slide 7</div>
             <div class="swiper-slide">Slide 8</div>
             <div class="swiper-slide">Slide 9</div> -->
                     </div>
-                    <!-- <div class="swiper-button-next"></div>
+                    <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
-                    <div class="swiper-pagination"></div> -->
+                    <div class="swiper-pagination"></div>
                 </div>
+                <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
             </div>
             <!-- <div class="swiper-slide imagen-del-dia" id="imagen-del-dia">
               <img id="lunes" src="./images/Lunes.jpg" alt="Programacion del lunes">
@@ -92,7 +95,7 @@
               <img id="sabado" src="./images/sabado.jpg" alt="Programacion del sábado">
               <img id="domingo" src="./images/domingo.webp" alt="Programacion del domingo">
             </div> -->
-            <div class="grabaciones">
+            <!-- <div class="grabaciones">
                 <h1>GRABACIONES</h1>
                 <ul>
                     <li>▶︎ INDIE STEREO <p>
@@ -108,24 +111,29 @@
                     <li>▶︎ EL CUARTITO DEL 55 <p> 20-04-2023</p>
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </section>
         <section class="second-part">
             <div class="program" id="programas">
                 <h1>PROGRAMAS</h1>
                 <div class="container-program">
-                    <h3>INDIE STEREO</h3>
+                    <h3>EL CUARTITO DEL 55</h3>
                     <div class="text">
-                        <img src="./images/indiestereo.jpeg" alt="">
-                        <p class="description-program">Programa dedicado a la escena musical independiente, en voz de
-                            Mon Gonzalez y Mike Aguilar.</p>
-                        <p class="date-program">VIERNES A LAS 21 hrs.</p>
+                        <div class="image-container">
+                            <video src="./videos/vm.mp4" controls></video>
+                            <img src="./images/el-cuartito-victor.webp" alt="">
+                        </div>
+                        <p class="description-program"></p>
+                        <p class="date-program">JUEVES A LAS 20 hrs.</p>
                     </div>
                 </div>
                 <div class="container-program">
                     <h3>PLAYLIST</h3>
                     <div class="text">
-                        <img src="./images/Poster-Playlist.png" alt="">
+                        <div class="image-container">
+                            <video src="./videos/pl.mp4" controls></video>
+                            <img src="./images/Poster-Playlist.png" alt="">
+                        </div>
                         <p class="description-program">
                             Playlist, con Carlos Zamora es un espacio de géneros diversos que
                             evoca la nostalgia de la década de los 90 y los 2000.
@@ -134,13 +142,15 @@
                     </div>
                 </div>
                 <div class="container-program">
-                    <h3>EL CUARTITO DEL 55</h3>
+                    <h3>INDIE STEREO</h3>
                     <div class="text">
-                        <img src="./images/el-cuartito-victor.webp" alt="">
-                        <p class="description-program">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                            hic necessitatibus a
-                            quos maiores dolores, est quibusdam id minus ipsam.</p>
-                        <p class="date-program">JUEVES A LAS 20 hrs.</p>
+                        <div class="image-container">
+                            <video src="./videos/is.mp4" controls></video>
+                            <img src="./images/indiestereo.jpeg" alt="">
+                        </div>
+                        <p class="description-program">Programa dedicado a la escena musical independiente, en voz de
+                            Mon Gonzalez y Mike Aguilar.</p>
+                        <p class="date-program">VIERNES A LAS 21 hrs.</p>
                     </div>
                 </div>
             </div>
@@ -149,13 +159,14 @@
     <script defer src="./js/index.js"></script>
     <footer>
         <div id="contact" class="container-footer">
-            <div class="footer-info">
+            <!-- <div class="footer-info">
                 <h3>¡Contáctanos!</h3>
                 <p>Alex Rodriguez</p>
                 <p>Lorem ipsum dolor sit.</p>
                 <p>Telefono: 555 555 5555</p>
                 <p>Email: devf.alexrodriguez@gmail.com</p>
-            </div>
+            </div> -->
+
             <div class="footer-social">
                 <h3>¡Síguenos en nuestras Redes Sociales!</h3>
                 <ul>
@@ -167,10 +178,11 @@
                     <li><a href="https://www.youtube.com/@InterAccion_Medios" target="_blank"><i
                                 class="fab fa-youtube"></i></a>
                     </li>
-                    <li><a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="https://wa.me/2283826227" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
 
                 </ul>
             </div>
+            <p style="color:grey">Copyright © 2023</p>
         </div>
     </footer>
 </body>

@@ -1,5 +1,3 @@
-# Evitar el error "net::ERR_TOO_MANY_REDIRECTS"
 RewriteEngine On
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]

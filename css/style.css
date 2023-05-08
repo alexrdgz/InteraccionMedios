@@ -27,7 +27,7 @@ body {
 
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   max-width: 992px;
   margin: 0 auto;
 }
@@ -82,12 +82,11 @@ body {
 .nav-menu-link_active {
   color: #ffff;
   background-color: #e4196e;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .players:hover {
-  color: #e4196e;
-  outline: #e4196e solid 4px;
+  color: red;
   background-color: #05355a;
 }
 
@@ -215,7 +214,7 @@ color: rgb(255, 255, 255);
 }
 
 .first-part {
-  width: 75%;
+  width: 70%;
   height: max-content;
   display: flex;
   text-align: center;
@@ -224,13 +223,13 @@ color: rgb(255, 255, 255);
 
 /* slider */
 .events {
-  height: 40%;
-  width: 50%;
+  height: 500px;
+  width: 100%;
 
 }
 
 .swiper {
-  width: 80%;
+  width: 100%;
   height: 100%;
   background-color: #000000;
   border: #05355a 3px solid;
@@ -244,46 +243,15 @@ color: rgb(255, 255, 255);
   align-items: center;
 }
 
-.swiper-slide video {
+.swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-#prev-button{
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 40px;
-  height: 50px;
-  font-size: 40px;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
-  color: #e4196e;
-  border: none;
-}
-#next-button{
-  position:absolute;
-  top: 50%;
-  right: 0;
-  width: 40px;
-  height: 50px;
-  font-size: 40px;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: 0.3s;
-  color: #e4196e;
-  border: none;
-}
-#prev-button:hover,
-#next-button:hover{
-  cursor: pointer;
-  background-color: #05355a;
-}
 
-.grabaciones {
+/* .grabaciones {
   color: #ffffff;
   padding: 20px 0 0 0;
   width: 40%;
@@ -321,10 +289,10 @@ color: rgb(255, 255, 255);
 
 .imagen-del-dia img {
   display: none;
-}
+} */
 
 .second-part {
-  width: 65%;
+  width: 75%;
   height: max-content;
   display: flex;
   text-align: center;
@@ -347,6 +315,12 @@ color: rgb(255, 255, 255);
   background-color: #05355a;
   border-radius: 10px;
 }
+.image-container video {
+  display: none;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
 
 .text {
   display: flex;
@@ -355,8 +329,8 @@ color: rgb(255, 255, 255);
 }
 
 .text img {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   object-fit: cover;
   border-radius: 10px;
   margin-right: 10px;
@@ -366,6 +340,7 @@ color: rgb(255, 255, 255);
   color: #83c5f7;
   text-align: center;
   width: 100%;
+  margin: 0 20px;
 }
 
 .date-program {
@@ -381,7 +356,6 @@ color: rgb(255, 255, 255);
   color: #e4196e;
   transition: 0.5s;
 }
-
 
 /* footer */
 
@@ -437,8 +411,8 @@ footer {
 }
 
 .footer-social a:hover {
-  background-color: #fff;
-  color: #333;
+  color: #e4196e;
+  transition: 0.5s;
 }
 
 
@@ -515,7 +489,7 @@ footer {
     position: relative;
     height: max-content;
     top: 10px;
-    left: -40px;
+    left: -20px;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
@@ -543,15 +517,21 @@ footer {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    padding-bottom: 40px;
   }
 
   .events {
-    height: 40%;
+    height: 400px;
     width: 100%;
   }
 
   .swiper {
     width: 100%;
+  }
+
+  .swiper-slide p {
+    font-size: 15px;
+    padding: 10px 20px 30px 20px;
   }
 
   .grabaciones {
@@ -590,8 +570,8 @@ footer {
 
   .text img {
     margin-top: 10px;
-    height: 125px;
-    width: 125px;
+    height: 250px;
+    width: 250px;
   }
 
   .description-program {
