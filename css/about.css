@@ -88,6 +88,11 @@ color: rgb(255, 255, 255);
   height: 150px;
   object-fit: cover;
 }
+.profile-img:hover{
+  outline: #e4196e 3px solid;
+  transition: .1s;
+  transform: translateY(-3px);
+}
 
 .profile-container {
   padding: 5px 15px 15px 15px;
@@ -96,7 +101,9 @@ color: rgb(255, 255, 255);
 .profile-container h1{
   font-size: 16px;
   text-align: center;
+  color: #e4196e;
 }
+
 .profile-container h2, 
 .profile-container p{
   font-size: 14px;
@@ -129,8 +136,9 @@ color: rgb(255, 255, 255);
 }
 
 .social-about a:hover {
-  background-color: #fff;
-  color: #000000;
+  color: #e4196e;
+  transition: 0.5s;
+  transform: translateY(-3px);
 }
 
 .profile-container p,

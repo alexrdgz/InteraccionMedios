@@ -214,7 +214,7 @@ color: rgb(255, 255, 255);
 }
 
 .first-part {
-  width: 70%;
+  width: 73%;
   height: max-content;
   display: flex;
   text-align: center;
@@ -355,6 +355,8 @@ color: rgb(255, 255, 255);
   cursor: pointer;
   color: #e4196e;
   transition: 0.5s;
+  box-shadow: 0 2px #e4196e;
+  transform: translateY(4px);
 }
 
 /* footer */
@@ -413,6 +415,7 @@ footer {
 .footer-social a:hover {
   color: #e4196e;
   transition: 0.5s;
+  transform: translateY(-3px);
 }
 
 
