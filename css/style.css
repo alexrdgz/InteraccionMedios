@@ -52,11 +52,8 @@ body {
 }
 
 .logo {
-  font-size: 30px;
-  font-weight: bold;
   padding: 0px;
   height: 60px;
-  width: 60px;
 }
 
 
@@ -439,14 +436,6 @@ footer {
     width: 100%;
     top: 0;
     left: 0;
-  }
-
-  .logo {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 0 20px;
-    height: 60px;
-    width: 100px;
   }
 
   .nav {
