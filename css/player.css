@@ -38,8 +38,7 @@ h1 {
   transform: translate(-50%, -50%);
   object-fit: cover;
   border-radius: 50%;
-  border: #fff solid 10px;
-  outline: #e4196e solid 10px;
+  border: #e4196e solid 10px;
 }
 
 .audio-container {
@@ -159,16 +158,6 @@ input[type="range"]::-moz-range-thumb {
   transform: translateY(-3px);
 }
 
-/* .playericons {
-  display: flex;
-  align-items: center;
-}
-
-.icons {
-  margin: 50px;
-  display: flex;
-  justify-content: space-evenly;
-} */
 
 @media (max-width: 768px) {
   .portada {

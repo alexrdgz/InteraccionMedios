@@ -55,10 +55,10 @@ body {
   font-size: 30px;
   font-weight: bold;
   padding: 0px;
-  line-height: 60px;
-  margin: 0 10px;
-  width: max-content;
+  height: 60px;
+  width: 80px;
 }
+
 
 .nav-menu {
   display: flex;
@@ -101,9 +101,7 @@ body {
   cursor: pointer;
 }
 
-.logo {
-  height: 60px;
-}
+
 .player-radio{
   display: none;
 }
@@ -320,7 +318,17 @@ color: rgb(255, 255, 255);
   width: 250px;
   height: 250px;
   border-radius: 10px;
+  
 }
+
+.image-container video::-webkit-media-controls-timeline,
+.image-container video::-webkit-media-controls-fullscreen-button,
+.image-container video::-webkit-media-controls-current-time-display,
+.image-container video::-webkit-media-controls-time-remaining-display
+{
+   display: none !important;
+}
+
 
 .text {
   display: flex;
@@ -438,6 +446,7 @@ footer {
     font-weight: bold;
     padding: 0 20px;
     height: 60px;
+    width: 120px;
   }
 
   .nav {

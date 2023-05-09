@@ -18,7 +18,7 @@ navLinks.forEach(link => {
 
 
 const streamUrl = 'https://stream.zeno.fm/zzx9y55gbrduv';
-const audio = document.getElementById('audio-stream');
+const audio = new Audio(streamUrl);
 const playBtn = document.getElementById('play-btn');
 const pauseBtn = document.getElementById('pause-btn');
 const volumeControl = document.getElementById('volume-control');
@@ -34,16 +34,20 @@ function showPauseBtn() {
 }
 
 function playAudio() {
-  audio.src = streamUrl;
   audio.load();
   audio.play();
   showPauseBtn();
-}
 
+  
+  localStorage.setItem('audioState', 'playing');
+}
 
 function pauseAudio() {
   audio.pause();
   showPlayBtn();
+
+
+  localStorage.setItem('audioState', 'paused');
 }
 
 function changeVolume() {
@@ -54,4 +58,12 @@ playBtn.addEventListener('click', playAudio);
 pauseBtn.addEventListener('click', pauseAudio);
 volumeControl.addEventListener('input', changeVolume);
 
-showPauseBtn();
+
+const audioState = localStorage.getItem('audioState');
+if (audioState === 'playing') {
+  audio.play();
+  showPauseBtn();
+} else {
+  audio.pause();
+  showPlayBtn();
+}
