@@ -73,7 +73,7 @@ color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #05355a;
+  background-color: #04345a;
   width: 250px;
   margin: 20px 10px 10px 10px;
   border-radius: 10px;
@@ -89,7 +89,7 @@ color: rgb(255, 255, 255);
   object-fit: cover;
 }
 .profile-img:hover{
-  border: #e4196e 2px solid;
+  border: #d12270 2px solid;
   transition: .1s;
   transform: translateY(-3px);
 }
@@ -101,7 +101,7 @@ color: rgb(255, 255, 255);
 .profile-container h1{
   font-size: 16px;
   text-align: center;
-  color: #e4196e;
+  color: #d12270;
 }
 
 .profile-container h2, 
@@ -136,7 +136,7 @@ color: rgb(255, 255, 255);
 }
 
 .social-about a:hover {
-  color: #e4196e;
+  color: #d12270;
   transition: 0.5s;
   transform: translateY(-3px);
 }

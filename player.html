@@ -26,13 +26,13 @@
             <button class="nav-toggle" aria-label="abrir menu"><i class="fa-solid fa-bars"
                     style="color: #e4196e;"></i></button>
             <ul class="nav-menu">
-                <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home"
-                        href="/"><i class="fa-solid fa-house"></i>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home" href="/"><i
+                            class="fa-solid fa-house"></i>
                         INICIO</a></li>
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link players" href="./player.html">RADIO
                         <img id="antenaradio" src="./images/antena.png" alt=""></a></li>
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home"
-                        href="/#programas">PROGRAMAS</a></li>
+                        href="./programas/">PROGRAMAS</a></li>
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="./about.html">ACERCA DE NOSOTROS</a>
                 </li>
                 <!-- <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="./about.html#contact">CONTACTO</a> -->
@@ -41,11 +41,11 @@
         </nav>
     </header>
     <section>
-            <img class="portada" src="./images/im.png" alt="">
-            <h1>¡Síguenos en nuestras Redes Sociales!
-                <!-- <p> @InteraccionMedios</p> -->
-            </h1>
-        
+        <img class="portada" src="./images/im.png" alt="">
+        <h1>¡Síguenos en nuestras Redes Sociales!
+            <!-- <p> @InteraccionMedios</p> -->
+        </h1>
+
         <div class="social">
             <ul>
                 <li><a href="https://www.facebook.com/profile.php?id=100081777163941" target="_blank"><i
@@ -62,15 +62,18 @@
             </ul>
         </div>
         <div class="audio-container">
-            <audio id="audio-stream" src="https://stream.zeno.fm/zzx9y55gbrduv"></audio>
+            <audio id="audio-stream">
+                <source src="https://stream.zeno.fm/zzx9y55gbrduv" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
             <div class="playericons">
-            <button id="play-btn" class="play-btn">
-                <i class="fas fa-play fa-4x"></i>
-            </button>
-            <button id="pause-btn" class="pause-btn">
-                <i class="fas fa-pause fa-4x"></i>
-            </button>
-        </div>
+                <button id="play-btn" class="play-btn">
+                    <i class="fas fa-play fa-4x"></i>
+                </button>
+                <button id="pause-btn" class="pause-btn">
+                    <i class="fas fa-pause fa-4x"></i>
+                </button>
+            </div>
             <input id="volume-control" type="range" min="0" max="100" value="50">
         </div>
 

@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    top: 100px;
+  }
+  
+  #en-vivo {
+    display: none;
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  #en-vivo:hover{
+    background-color: #fff;
+  }
+  #en-vivo a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  }
+  
+  #en-vivo a:hover {
+    cursor: pointer;
+    color: red;
+  }
+  
+  .programs {
+    flex-wrap: wrap;
+    width: 80%;
+    margin-bottom: 80px;
+    height: max-content;
+  }
+  
+
+  /* Perfiles */
+  .profiles {
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: stretch;
+  
+  }
+  
+  .cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #04345a;
+    width: 325px;
+    margin: 20px 10px 10px 10px;
+    border-radius: 10px;
+    box-shadow: #000000 2px 2px 4px;
+  }
+  
+  .cover-img {
+    padding: 0;
+    margin: 30px 15px 0 15px;
+    border-radius: 25px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  .cover-img:hover{
+    border: #d12270 2px solid;
+    transition: .1s;
+    transform: translateY(-3px);
+  }
+  
+  .program-container {
+    padding: 0;
+    margin: 0;
+  }
+  .program-container h1{
+    font-size: 16px;
+    text-align: center;
+    color: #d12270;
+    padding: 10px 0;
+  }
+  .program-container ul{
+    margin: 0;
+    padding: 0;
+  }
+  .program-container li{
+    padding: 10px 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+.program-container audio{
+    padding: 0;
+}
+
+
+  footer {
+    width: 100%;
+  }
+  @media (max-width: 768px){
+    .programs{
+      width: 100%;
+    }
+    .cover{
+      width: 85%;
+    }
+  }

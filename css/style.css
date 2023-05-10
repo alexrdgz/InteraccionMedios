@@ -15,14 +15,14 @@ body {
 }
 
 .header {
-  background-color: #05355a;
+  background-color: #04345a;
   height: 60px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
-  box-shadow: #e4196e 1px 1px 2px;
+  box-shadow: #d12270 1px 1px 2px;
 }
 
 .nav {
@@ -78,17 +78,17 @@ body {
 .nav-menu-link:hover,
 .nav-menu-link_active {
   color: #ffff;
-  background-color: #e4196e;
+  background-color: #d12270;
   transition: 0.5s;
 }
 
 .players:hover {
   color: red;
-  background-color: #05355a;
+  background-color: #04345a;
 }
 
 .nav-toggle {
-  color: #e4196e;
+  color: #d12270;
   background: none;
   border: none;
   font-size: 30px;
@@ -140,7 +140,7 @@ main {
 .pause-btn {
   width: 50px;
   height: 50px;
-  background-color: #e4196e;
+  background-color: #d12270;
   /* background: transparent; */
   border: none;
   cursor: pointer;
@@ -168,7 +168,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #e4196e;
+  background-color: #d12270;
   cursor: pointer;
 }
 
@@ -176,7 +176,7 @@ input[type="range"]::-moz-range-thumb {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #e4196e;
+  background-color: #d12270;
   cursor: pointer;
 }
 
@@ -227,7 +227,7 @@ color: rgb(255, 255, 255);
   width: 100%;
   height: 100%;
   background-color: #000000;
-  border: #05355a 3px solid;
+  border: #04345a 3px solid;
 }
 
 .swiper-slide {
@@ -307,7 +307,7 @@ color: rgb(255, 255, 255);
   font-weight: bold;
   padding: 10px;
   margin: 15px;
-  background-color: #05355a;
+  background-color: #04345a;
   border-radius: 10px;
 }
 .image-container video {
@@ -358,16 +358,16 @@ color: rgb(255, 255, 255);
 
 .container-program:hover {
   cursor: pointer;
-  color: #e4196e;
+  color: #d12270;
   transition: 0.5s;
-  box-shadow: 0 2px #e4196e;
+  box-shadow: 0 2px #d12270;
   transform: translateY(4px);
 }
 
 /* footer */
 
 footer {
-  background-color: #05355a;
+  background-color: #04345a;
   color: #fff;
   padding: 40px 0;
   margin: 0;
@@ -411,7 +411,7 @@ footer {
   height: 40px;
   color: #fff;
   border-radius: 50%;
-  background-color: #05355a;
+  background-color: #04345a;
   font-size: 20px;
   transition: background-color 0.3s;
   text-decoration: none;
@@ -430,7 +430,7 @@ footer {
   }
 
   .header {
-    background-color: #05355a;
+    background-color: #04345a;
     height: 60px;
     position: fixed;
     width: 100%;
@@ -446,7 +446,7 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-right: 20px;
-    background-color: #05355a;
+    background-color: #04345a;
     position: fixed;
     left: 0;
     top: 60px;
@@ -471,7 +471,7 @@ footer {
   .nav-menu-link:hover,
   .nav-menu-link_active {
     background: none;
-    color: #e4196e;
+    color: #d12270;
     transition: 0.5s;
   }
 
