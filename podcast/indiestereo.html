@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/player-podcast.css">
+    <link rel="icon" type="image" href="../images/im.png">
+    <script src="https://kit.fontawesome.com/5f222cc947.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>IndieStereo - Podcast</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="https://interaccionmedios.com/">
+                <img src="../images/im.png" class="logo nav-link"></a>
+
+            <a class="player-radio" href="./player.html">RADIO
+                <i class="fa-solid fa-tower-broadcast"></i>
+            </a>
+
+            <button class="nav-toggle" aria-label="abrir menu"><i class="fa-solid fa-bars"
+                    style="color: #e4196e;"></i></button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home" href="../"><i
+                            class="fa-solid fa-house"></i>
+                        INICIO</a></li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link players" href="../player.html">RADIO
+                        <i class="fa-solid fa-tower-broadcast"></i></a></li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home"
+                        href="../podcast/">PODCAST</a>
+                </li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="../about.html">ACERCA DE NOSOTROS</a>
+                </li>
+                <!-- <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="#contact">CONTACTO</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="background">
+            <a class="back" href="./"><i class="fa-sharp fa-solid fa-arrow-left fa-2x" style="color: #ffffff;"></i></a>
+            <img class="cover-img" src="../images/is.jpeg" alt="">
+            <h2 class="title">INDIE STEREO</h2>
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100081777163941" target="_blank"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
+                    <li><a href="https://www.instagram.com/interaccionmedios/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/@InterAccion_Medios" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                    </li>
+                    <li><a href="https://wa.me/2283826227" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <section>
+            <div class="audio-container">
+                <div id="song-info">
+                    <img class="coverimg" src="../images/is.jpeg" alt="">
+                    <div>
+                        <h3></h3>
+                        <h5></h5>
+                    </div>
+                </div>
+                <div id="btn-player">
+                    <button class="backward-btn">
+                        <i class="fas fa-backward"></i>
+                    </button>
+                    <button id="play-btn" class="play-btn">
+                        <i class="fas fa-play fa-2x"></i>
+                    </button>
+                    <button class="forward-btn">
+                        <i class="fas fa-forward"></i>
+                    </button>
+                </div>
+                <input id="volume-control" type="range" min="0" max="100" value="50">
+            </div>
+        </section>
+
+        <section class="contenido">
+        <div class="song">
+            <ul class="contendor">
+                <li class="musica">
+                    <img class="song-img" src="../images/is.jpeg" alt="">
+                    <div class="name-song">
+                        <h3>Titulo del programa</h3>
+                        <h5>Fecha</h5>
+                    </div>
+                    <audio
+                        src="#">
+                    </audio>
+                </li>
+                <li class="musica">
+                    <img class="song-img" src="../images/is.jpeg" alt="">
+                    <div class="name-song">
+                        <h3>Titulo del programa</h3>
+                        <h5>Fecha</h5>
+                    </div>
+                    <audio
+                        src="#">
+                    </audio>
+                </li>
+            </ul>
+        </div>
+        <div class="acerca-de">
+            <h1>Acerca de:</h1>
+            <p>Indie Stereo, la independencia evolutiva expresada en mil
+                ochocientos segundos del movimiento “indie rock”. Descubre tendencias y música emergente en
+                voz de Mon González y Mike Aguilar.
+                <br>
+                “It's simple and it goes like this”.</p>
+        </div>
+    </section>
+    </main>
+    <script src="../js/programs.js"></script>
+</body>
+
+</html>

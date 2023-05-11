@@ -3,9 +3,13 @@
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
   
+body{
+  background-image: none;
+  background-color: #131312;
+}
+
   main {
     display: flex;
-    justify-content: center;
     margin-bottom: 80px;
     top: 100px;
   }
@@ -39,7 +43,7 @@
   
   .programs {
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
     margin-bottom: 80px;
     height: max-content;
   }
@@ -50,30 +54,38 @@
     height: max-content;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 95%;
     justify-content: space-around;
     align-items: stretch;
   
   }
   
   .cover {
+    text-decoration: none;
+    color: #ffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #04345a;
-    width: 325px;
-    margin: 20px 10px 10px 10px;
-    border-radius: 10px;
+    background-color: #191918;
+    width: 185px;
+    border-radius: 8px;
     box-shadow: #000000 2px 2px 4px;
+    margin-bottom: 20px;
+  }
+  .cover:hover{
+    background-color: #282828;
+    transition: .5s;
+    cursor: pointer;
   }
   
   .cover-img {
     padding: 0;
-    margin: 30px 15px 0 15px;
-    border-radius: 25px;
+    margin: 15px;
+    border-radius: 8px;
     width: 150px;
     height: 150px;
     object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 1) 5px 0px 20px;
   }
   .cover-img:hover{
     border: #d12270 2px solid;
@@ -82,14 +94,13 @@
   }
   
   .program-container {
-    padding: 0;
+    padding: 10px 10px;
     margin: 0;
+    text-align: center;
   }
   .program-container h1{
-    font-size: 16px;
-    text-align: center;
-    color: #d12270;
-    padding: 10px 0;
+    font-size: 20px;
+    padding-bottom: 5px;
   }
   .program-container ul{
     margin: 0;
@@ -100,20 +111,22 @@
     list-style: none;
     text-decoration: none;
   }
-  
-.program-container audio{
-    padding: 0;
-}
 
 
   footer {
     width: 100%;
   }
   @media (max-width: 768px){
-    .programs{
-      width: 100%;
-    }
     .cover{
-      width: 85%;
+      width: 150px;
+
+      background: none;
+      box-shadow: none;
+    }
+    .cover-img{
+      width: 125px;
+      height: 125px;
+      object-fit: cover;
+      border-radius: 5px;
     }
   }

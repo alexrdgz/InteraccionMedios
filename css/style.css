@@ -99,9 +99,10 @@ body {
 }
 
 
-.player-radio{
+.player-radio {
   display: none;
 }
+
 main {
   color: #ffffff;
   min-height: 100vh;
@@ -195,12 +196,14 @@ input[type="range"]::-moz-range-thumb {
   font-size: 18px;
   border-radius: 10px;
 }
-#en-vivo:hover{
+
+#en-vivo:hover {
   background-color: #fff;
 }
-#en-vivo a{
-text-decoration: none;
-color: rgb(255, 255, 255);
+
+#en-vivo a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 #en-vivo a:hover {
@@ -246,46 +249,6 @@ color: rgb(255, 255, 255);
 }
 
 
-/* .grabaciones {
-  color: #ffffff;
-  padding: 20px 0 0 0;
-  width: 40%;
-  margin: 0;
-  border-radius: 10px;
-}
-
-.grabaciones ul {
-  margin: 0;
-  padding: 0;
-}
-
-.grabaciones li {
-  text-align: start;
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 10px;
-  list-style: none;
-
-  margin: 10px;
-  background-color: #05355a;
-  border-radius: 10px;
-}
-
-.grabaciones li:hover {
-  cursor: pointer;
-  color: #e4196e;
-  transition: 0.5s;
-}
-
-.grabaciones p {
-  color: #83c5f7;
-}
-
-.imagen-del-dia img {
-  display: none;
-} */
-
 .second-part {
   width: 75%;
   height: max-content;
@@ -310,20 +273,20 @@ color: rgb(255, 255, 255);
   background-color: #04345a;
   border-radius: 10px;
 }
+
 .image-container video {
   display: none;
   width: 250px;
   height: 250px;
   border-radius: 10px;
-  
+
 }
 
 .image-container video::-webkit-media-controls-timeline,
 .image-container video::-webkit-media-controls-fullscreen-button,
 .image-container video::-webkit-media-controls-current-time-display,
-.image-container video::-webkit-media-controls-time-remaining-display
-{
-   display: none !important;
+.image-container video::-webkit-media-controls-time-remaining-display {
+  display: none !important;
 }
 
 
@@ -482,10 +445,12 @@ footer {
   .nav-menu_visible {
     left: 0;
   }
-  .players{
+
+  .players {
     display: none;
   }
-  .player-radio{
+
+  .player-radio {
     font-size: 18px;
     position: relative;
     height: max-content;
@@ -499,9 +464,11 @@ footer {
     padding: 10px 10px;
     border-radius: 10px;
   }
-  .player-radio{
+
+  .player-radio {
     display: block;
   }
+
   .audio-container {
     width: 80%;
     position: fixed;
