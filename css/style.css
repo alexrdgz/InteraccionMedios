@@ -455,7 +455,7 @@ footer {
     position: relative;
     height: max-content;
     top: 10px;
-    left: -20px;
+    left: 0px;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
@@ -470,15 +470,16 @@ footer {
   }
 
   .audio-container {
-    width: 80%;
+    width: 100%;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 15px;
+    bottom: 0;
     display: flex;
     justify-content: space-evenly;
+    border-radius: 0;
+    background-color: #04345a;
   }
-
 
   .first-part {
     display: flex;

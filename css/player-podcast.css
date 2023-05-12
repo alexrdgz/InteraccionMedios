@@ -20,21 +20,29 @@ body {
     position: fixed;
     top: 70px;
     left: 10px;
+    color: #fff;
 }
 
 .audio-container {
     position: fixed;
-    bottom: 10px;
+    bottom: 0px;
     left: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #d12270;
+    background: #05355a;
     padding: 5px 0px;
     height: 70px;
     width: 100%;
-
+    border-radius: 0;
+    z-index: 9999;
 }
+.progress-bar {
+    position: absolute;
+    background-color: #ccc;
+    height: 4px;
+    top: 0;
+  }  
 
 #song-info {
     display: flex;
@@ -79,14 +87,22 @@ body {
 
 .backward-btn,
 .forward-btn {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     background-color: #05355a;
     border: none;
     cursor: pointer;
     margin-right: 10px;
     border-radius: 50%;
     color: #f2f2f2;
+
+}
+.forward-btn:hover,
+.backward-btn:hover,
+.play-btn:hover,
+.pause-btn:hover{
+    background-color: #d12270;
+    transition: .2s;
 }
 
 
@@ -176,7 +192,7 @@ text-align: justify;
     object-fit: cover;
 }
 
-.contenedor {
+.contendor {
     padding: 0;
     margin: 0;
     width: 100%;
@@ -184,18 +200,30 @@ text-align: justify;
 }
 
 .musica {
-    width: 100%;
-    cursor: pointer;
     margin-bottom: 15px;
     display: flex;
     text-decoration: none;
     list-style: none;
+    align-items: center;
 }
+
 
 
 .name-song h3,
 .name-song h5 {
+    text-align: start;
     margin: 0 18px;
+width: 250px;
+}
+.musica- {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    border-bottom: #232222 solid 2px;
+    margin-bottom: 10px;
+}
+.musica- p{
+    font-size: 14px;
 }
 
 @media (min-width: 767px) {
@@ -207,6 +235,10 @@ text-align: justify;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.back:hover{
+    transform: translateX(-4px);
+    transition: .3s;
 }
     .cover-img {
         margin-top: 25px;
@@ -224,7 +256,7 @@ text-align: justify;
     margin: 0;
     padding: 10px 50px 10px 10px;
 }
-    .musica:hover {
+    .musica-:hover {
         transition: 0.3s;
         transform: translateX(-4px);
         background-color: #282828;
@@ -274,19 +306,31 @@ text-align: justify;
         cursor: pointer;
     }
     .contenido{
-        width: 80%;
+        width: 90%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
     .acerca-de{
-    width: 30%;
+    width: 20%;
+    }
+    .contendor{
+        margin: 0;
+        padding: 0;
     }
     
     .song {
         margin-top: 20px;
-        width: 70%;
+        width: 80%;
         display: flex;
         padding: 0;
     }
+    .musica{
+        width: 350px;
+    }
+.musica-{
+    flex-direction: unset;
+    align-items: center;
+}
+
 }

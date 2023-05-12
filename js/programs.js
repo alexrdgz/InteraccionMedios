@@ -121,15 +121,28 @@ function seekAudio(seconds) {
 
 // Añadir evento de clic al botón de adelantar
 forwardBtn.addEventListener("click", () => {
-  seekAudio(10); // Adelantar 10 segundos
+  seekAudio(30); // Adelantar 10 segundos
 });
 
 // Añadir evento de clic al botón de atrasar
 backwardBtn.addEventListener("click", () => {
-  seekAudio(-10); // Atrasar 10 segundos
+  seekAudio(-15); // Atrasar 10 segundos
 });
 const volumeControl = document.getElementById("volume-control");
 function changeVolume() {
   audio.volume = volumeControl.value / 100;
 }
 volumeControl.addEventListener("input", changeVolume);
+
+const progressBar = document.querySelector(".progress-bar");
+audio.addEventListener("timeupdate", () => {
+  const progress = (audio.currentTime / audio.duration) * 100;
+  progressBar.style.width = `${progress}%`;
+});
+progressBar.addEventListener("click", (event) => {
+  const rect = progressBar.getBoundingClientRect();
+  const progressWidth = event.clientX - rect.left;
+  const progressBarWidth = rect.right - rect.left;
+  const progress = progressWidth / progressBarWidth;
+  audio.currentTime = progress * audio.duration;
+});
