@@ -40,6 +40,16 @@ body{
     cursor: pointer;
     color: red;
   }
+  .back {
+    position: fixed;
+    top: 70px;
+    left: 10px;
+    color: #fff;
+}
+.back:hover {
+  transform: translateX(-4px);
+  transition: .3s;
+}
   
 .tittle{
   text-transform: uppercase;

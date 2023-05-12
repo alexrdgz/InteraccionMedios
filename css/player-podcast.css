@@ -14,6 +14,11 @@ body {
     background: linear-gradient(to bottom, #d12270, #131312);
     height: max-content;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .back {
@@ -37,12 +42,13 @@ body {
     border-radius: 0;
     z-index: 9999;
 }
+
 .progress-bar {
     position: absolute;
     background-color: #ccc;
     height: 4px;
     top: 0;
-  }  
+}
 
 #song-info {
     display: flex;
@@ -97,20 +103,18 @@ body {
     color: #f2f2f2;
 
 }
+
 .forward-btn:hover,
 .backward-btn:hover,
 .play-btn:hover,
-.pause-btn:hover{
+.pause-btn:hover {
     background-color: #d12270;
     transition: .2s;
 }
 
-
-input{
+input {
     display: none;
 }
-
-
 
 .cover-img {
     width: 200px;
@@ -118,7 +122,6 @@ input{
     object-fit: cover;
     position: relative;
     top: 20px;
-    left: 25%;
     margin-bottom: 25px;
     box-shadow: rgba(0, 0, 0, .5) 5px 0px 20px;
 }
@@ -129,54 +132,25 @@ input{
 }
 
 .social {
-    justify-content: space-around;
-    color: rgb(255, 255, 255);
     padding: 10px;
     width: 100%;
-    text-align: center;
-    font-weight: bold;
     z-index: 1000;
 }
 
-.social ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.social li {
-    margin-right: 10px;
-}
-
-.social a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    border-radius: 50%;
-    font-size: 26px;
-    transition: background-color 0.3s;
-    text-decoration: none;
-}
-
-.social a:hover {
-    color: #d12270;
-    transition: 0.5s;
-    transform: translateY(-3px);
-}
-.contenido{
+.contenido {
     width: 90%;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
 }
-.acerca-de{
-width: 100%;
-text-align: justify;
+
+.acerca-de {
+    width: 100%;
+    text-align: justify;
+}
+.acerca-de p{
+    color: #ccc;
+    font-size: 16px;
 }
 
 .song {
@@ -200,7 +174,7 @@ text-align: justify;
 }
 
 .musica {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     display: flex;
     text-decoration: none;
     list-style: none;
@@ -212,38 +186,39 @@ text-align: justify;
 .name-song h3,
 .name-song h5 {
     text-align: start;
-    margin: 0 18px;
-width: 250px;
+    margin: 0 10px;
+    width: 250px;
 }
+
 .musica- {
     cursor: pointer;
     display: flex;
     flex-direction: column;
     border-bottom: #232222 solid 2px;
-    margin-bottom: 10px;
+    margin: 10px 15px 0 0;
+    padding-bottom: 10px;
 }
-.musica- p{
+
+.musica- p {
     font-size: 14px;
+    color: #ccc;
+    text-align: justify;
 }
 
 @media (min-width: 767px) {
     .audio-container {
         left: 0;
     }
-.background{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.back:hover{
-    transform: translateX(-4px);
-    transition: .3s;
-}
+
+    .back:hover {
+        transform: translateX(-4px);
+        transition: .3s;
+    }
+
     .cover-img {
         margin-top: 25px;
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
         position: initial;
     }
 
@@ -252,10 +227,12 @@ width: 250px;
         text-align: center;
         margin: 0;
     }
-.musica{
-    margin: 0;
-    padding: 10px 50px 10px 10px;
-}
+
+    .musica {
+        margin: 0;
+        padding: 10px 50px 8px 10px;
+    }
+
     .musica-:hover {
         transition: 0.3s;
         transform: translateX(-4px);
@@ -279,6 +256,7 @@ width: 250px;
         height: 50px;
 
     }
+
     input[type="range"] {
         display: block;
         width: 100px;
@@ -288,7 +266,7 @@ width: 250px;
         margin-right: 10px;
         border-radius: 10px;
     }
-    
+
     input[type="range"]::-webkit-slider-thumb {
         -webkit-appearance: none;
         width: 15px;
@@ -297,7 +275,7 @@ width: 250px;
         background-color: #d12270;
         cursor: pointer;
     }
-    
+
     input[type="range"]::-moz-range-thumb {
         width: 12px;
         height: 12px;
@@ -305,32 +283,37 @@ width: 250px;
         background-color: #d12270;
         cursor: pointer;
     }
-    .contenido{
+
+    .contenido {
         width: 90%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .acerca-de{
-    width: 20%;
+
+    .acerca-de {
+        width: 20%;
     }
-    .contendor{
+
+    .contendor {
         margin: 0;
         padding: 0;
     }
-    
+
     .song {
         margin-top: 20px;
         width: 80%;
         display: flex;
         padding: 0;
     }
-    .musica{
+
+    .musica {
         width: 350px;
     }
-.musica-{
-    flex-direction: unset;
-    align-items: center;
-}
+
+    .musica- {
+        flex-direction: unset;
+        align-items: center;
+    }
 
 }
