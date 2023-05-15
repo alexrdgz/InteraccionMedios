@@ -16,15 +16,15 @@
     <title>Interacción Medios</title>
 </head>
 
-<body>
-    <!-- onload="cambiarImagen()" -->
+<body onload="cambiarImagen()">
+
     <header class="header">
         <nav class="nav">
             <a href="https://interaccionmedios.com/">
                 <img src="./images/im.png" class="logo nav-link" alt="Logo"></a>
 
-                <a class="player-radio" href="./player.html"><i class="fa-solid fa-tower-broadcast"></i> RADIO
-                </a>
+            <a class="player-radio" href="./player.html"><i class="fa-solid fa-tower-broadcast"></i> RADIO
+            </a>
 
             <button class="nav-toggle" aria-label="abrir menu"><i class="fa-solid fa-bars"
                     style="color: #e4196e;"></i></button>
@@ -37,7 +37,7 @@
                 <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home" href="./podcast/"><i
                             class="fa-solid fa-podcast"></i> PODCAST</a>
                 </li>
-                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="./about.html">ACERCA DE NOSOTROS</a>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="./about.html">COLABORADORES</a>
                 </li>
                 <!-- <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="#contact">CONTACTO</a></li> -->
             </ul>
@@ -50,7 +50,7 @@
         </section>
         <section>
             <div class="audio-container">
-                <audio preload="true">
+                <audio preload="auto">
                     <source src="https://stream.zeno.fm/zzx9y55gbrduv" type="audio/mp3">
                 </audio>
                 <button id="play-btn" class="play-btn">
@@ -66,6 +66,15 @@
             <div class="events">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
+                        <div class="swiper-slide imagen-del-dia" id="imagen-del-dia">
+                            <img id="lunes" src="./images/programacion/07.png" alt="Programacion del lunes">
+                            <img id="martes" src="./images/programacion/01.png" alt="Programacion del martes">
+                            <img id="miercoles" src="./images/programacion/02.png" alt="Programacion del miércoles">
+                            <img id="jueves" src="./images/programacion/03.png" alt="Programacion del jueves">
+                            <img id="viernes" src="./images/programacion/04.png" alt="Programacion del viernes">
+                            <img id="sabado" src="./images/programacion/05.png" alt="Programacion del sábado">
+                            <img id="domingo" src="./images/programacion/06.png" alt="Programacion del domingo">
+                        </div>
                         <div class="swiper-slide">
                             <img src="./images/S5.jpg" alt="Caratula de Salud Cinco MX">
                         </div>
@@ -78,6 +87,7 @@
                         <div class="swiper-slide">
                             <img src="./images/is.jpeg" alt="Caratula de Indie Stereo">
                         </div>
+                        
                         <!-- <div class="swiper-slide">Slide 6</div>
                         <div class="swiper-slide">Slide 7</div>
                         <div class="swiper-slide">Slide 8</div>
@@ -89,15 +99,6 @@
                 </div>
                 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
             </div>
-            <!-- <div class="swiper-slide imagen-del-dia" id="imagen-del-dia">
-              <img id="lunes" src="./images/Lunes.jpg" alt="Programacion del lunes">
-              <img id="martes" src="./images/martes.jpg" alt="Programacion del martes">
-              <img id="miercoles" src="./images/miercoles.jpg" alt="Programacion del miércoles">
-              <img id="jueves" src="./images/jueves.jpg" alt="Programacion del jueves">
-              <img id="viernes" src="./images/viernes.jpg" alt="Programacion del viernes">
-              <img id="sabado" src="./images/sabado.jpg" alt="Programacion del sábado">
-              <img id="domingo" src="./images/domingo.webp" alt="Programacion del domingo">
-            </div> -->
 
         </section>
         <section class="second-part">

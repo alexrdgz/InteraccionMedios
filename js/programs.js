@@ -146,3 +146,4 @@ progressBar.addEventListener("click", (event) => {
   const progress = progressWidth / progressBarWidth;
   audio.currentTime = progress * audio.duration;
 });
+

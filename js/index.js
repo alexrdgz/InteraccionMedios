@@ -17,34 +17,34 @@ navLinks.forEach(link => {
 
 
 
-// function cambiarImagen() {
-//   var hoy = new Date().getDay();
-//   var imagen = document.getElementById('martes');
+function cambiarImagen() {
+  var hoy = new Date().getDay();
+  var imagen = document.getElementById('domingo');
 
-//   if (hoy === 0) {
-//     imagen.src = "./images/domingo.webp";
-//     imagen.alt = "Programacion del domingo";
-//   } else if (hoy === 1) {
-//     imagen.src = "./images/Lunes.jpg";
-//     imagen.alt = "Programacion del lunes";
-//   } else if (hoy === 2) {
-//     imagen.src = "./images/martes.jpg";
-//     imagen.alt = "Programacion del martes";
-//   } else if (hoy === 3) {
-//     imagen.src = "./images/miercoles.jpg";
-//     imagen.alt = "Programacion del miércoles";
-//   } else if (hoy === 4) {
-//     imagen.src = "./images/jueves.jpg";
-//     imagen.alt = "Programacion del jueves";
-//   } else if (hoy === 5) {
-//     imagen.src = "./images/viernes.jpg";
-//     imagen.alt = "Programacion del viernes";
-//   } else if (hoy === 6) {
-//     imagen.src = "./images/sabado.jpg";
-//     imagen.alt = "Programacion del sábado";
-//   }
-//   imagen.style.display = "block";
-// }
+  if (hoy === 0) {
+    // imagen.src = "./images/domingo.webp";
+    imagen.alt = "Programacion del domingo";
+  } else if (hoy === 1) {
+    // imagen.src = "./images/Lunes.jpg";
+    imagen.alt = "Programacion del lunes";
+  } else if (hoy === 2) {
+    // imagen.src = "./images/martes.jpg";
+    imagen.alt = "Programacion del martes";
+  } else if (hoy === 3) {
+    // imagen.src = "./images/miercoles.jpg";
+    imagen.alt = "Programacion del miércoles";
+  } else if (hoy === 4) {
+    // imagen.src = "./images/jueves.jpg";
+    imagen.alt = "Programacion del jueves";
+  } else if (hoy === 5) {
+    // imagen.src = "./images/viernes.jpg";
+    imagen.alt = "Programacion del viernes";
+  } else if (hoy === 6) {
+    // imagen.src = "./images/sabado.jpg";
+    imagen.alt = "Programacion del sábado";
+  }
+  imagen.style.display = "block";
+}
 
 
 

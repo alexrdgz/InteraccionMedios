@@ -18,7 +18,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .back {
@@ -148,7 +148,8 @@ input {
     width: 100%;
     text-align: justify;
 }
-.acerca-de p{
+
+.acerca-de p {
     color: #ccc;
     font-size: 16px;
 }
