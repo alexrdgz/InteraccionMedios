@@ -19,7 +19,7 @@ navLinks.forEach(link => {
 
 function cambiarImagen() {
   var hoy = new Date().getDay();
-  var imagen = document.getElementById('imagen del dia');
+  var imagen = document.getElementById('domingo');
 
   if (hoy === 0) {
     imagen.src = "./images/programacion/07.png";
