@@ -19,28 +19,28 @@ navLinks.forEach(link => {
 
 function cambiarImagen() {
   var hoy = new Date().getDay();
-  var imagen = document.getElementById('domingo');
+  var imagen = document.getElementById('imagen del dia');
 
   if (hoy === 0) {
-    // imagen.src = "./images/domingo.webp";
+    imagen.src = "./images/programacion/07.png";
     imagen.alt = "Programacion del domingo";
   } else if (hoy === 1) {
-    // imagen.src = "./images/Lunes.jpg";
+    imagen.src = "./images/programacion/01.png";
     imagen.alt = "Programacion del lunes";
   } else if (hoy === 2) {
-    // imagen.src = "./images/martes.jpg";
+    imagen.src = "./images/programacion/02.png";
     imagen.alt = "Programacion del martes";
   } else if (hoy === 3) {
-    // imagen.src = "./images/miercoles.jpg";
+    imagen.src = "./images/programacion/03.png";
     imagen.alt = "Programacion del miércoles";
   } else if (hoy === 4) {
-    // imagen.src = "./images/jueves.jpg";
+    imagen.src = "./images/programacion/04.png";
     imagen.alt = "Programacion del jueves";
   } else if (hoy === 5) {
-    // imagen.src = "./images/viernes.jpg";
+    imagen.src = "./images/programacion/05.png";
     imagen.alt = "Programacion del viernes";
   } else if (hoy === 6) {
-    // imagen.src = "./images/sabado.jpg";
+    imagen.src = "./images/programacion/06.png";
     imagen.alt = "Programacion del sábado";
   }
   imagen.style.display = "block";

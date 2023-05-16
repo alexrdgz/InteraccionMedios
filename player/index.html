@@ -1,0 +1,127 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/player.css">
+    <link rel="icon" type="image" href="../images/im.png">
+    <script src="https://kit.fontawesome.com/5f222cc947.js" crossorigin="anonymous"></script>
+
+    <title>Radio Online - Interacción Medios</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/lunaradio.js"></script>
+</head>
+<header class="header">
+    <nav class="nav">
+        <a href="https://interaccionmedios.com/">
+            <img src="../images/im.png" class="logo nav-link" alt="Logo"></a>
+
+        <a class="player-radio" href="../player/index.html"><i class="fa-solid fa-tower-broadcast"></i> RADIO
+        </a>
+
+        <button class="nav-toggle" aria-label="abrir menu"><i class="fa-solid fa-bars"
+                style="color: #e4196e;"></i></button>
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home" href="/"><i
+                        class="fa-solid fa-house"></i>
+                    INICIO</a></li>
+            <li class="nav-menu-item"><a class="nav-link nav-menu-link players" href="../player/index.html"><i
+                        class="fa-solid fa-tower-broadcast"></i> RADIO</a></li>
+            <li class="nav-menu-item"><a class="nav-link nav-menu-link nav-menu_link-home" href="../podcast/index.html"><i
+                        class="fa-solid fa-podcast"></i> PODCAST</a>
+            </li>
+            <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="../about.html">COLABORADORES</a>
+            </li>
+            <!-- <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="./about.html#contact">CONTACTO</a> -->
+            </li>
+        </ul>
+    </nav>
+</header>
+<body style="margin: 0px;
+padding-top: 60px;">
+
+
+
+    <div class="social">
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=100081777163941" target="_blank"><i
+                        class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/interaccionmedios/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+            </li>
+            <li><a href="https://www.youtube.com/@InterAccion_Medios" target="_blank"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li><a href="https://wa.me/2283826227" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+    </div>
+
+    <div id="lunaradio" style='width:100%; height: 100%;
+-webkit-border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: none;'>
+
+
+
+        <script src="../js/jquery-3.2.1.min.js" type="3bc5e4e5245e387f3290c38f-text/javascript"></script>
+        <script src="../js/lunaradio.min.js" type="3bc5e4e5245e387f3290c38f-text/javascript"></script>
+
+
+
+        <script type="3bc5e4e5245e387f3290c38f-text/javascript">
+$("#lunaradio").lunaradio({
+	
+	userinterface: "big",
+	backgroundcolor: "rgba(9,15,25,0.8)",
+	fontcolor: "#ffffff",
+	hightlightcolor: "#d12270",
+	fontname: "Saira Condensed",
+	googlefont: "Saira+Condensed:wght@100",
+	fontratio: "0.3",
+	radioname: "¡Síguenos en nuestras Redes Sociales!",
+	scroll: "true",
+	coverimage: "../images/im.png",
+	usevisualizer: "fake",
+	coverstyle: "animated",
+	visualizertype: "6",
+	multicolorvisualizer: "true",
+    color1: "f6f6f6",
+    color2: "323edd",
+    color3: "fc5404",
+    color4: "#fa225b",
+	itunestoken: "1000lIPN",
+	metadatatechnic: "corsproxy",
+	ownmetadataurl: "",
+	streamurl: "https://stream.zeno.fm/zzx9y55gbrduv",
+	streamtype: "radiozeno",
+	icecastmountpoint: "/radio.mp3",
+	radionomyid: "",
+	radionomyapikey: "",
+	radiozenoid: "eypgq8m08wquv",
+	radiojarid: "",
+	radiocoid: "",
+	shoutcastpath: "/stream",
+	shoutcastid: "1",
+	streamsuffix: "",
+	metadatainterval: "20000",
+	volume: "50",
+	debug: "false",
+	usestreamcorsproxy: "false", 
+	corsproxy: "https://corsradio.herokuapp.com/index.php?q=",
+	autoplay:"true",
+});
+</script>
+        <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js"
+            data-cf-settings="3bc5e4e5245e387f3290c38f-|49" defer=""></script>
+        <script src="../js/player.js"></script>
+</body>

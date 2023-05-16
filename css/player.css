@@ -1,118 +1,104 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
-}
-
-body {
-  height: max-content;
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
+}
+body{
   background-image: url(../images/FONDO.jpg);
+}
+
+
+.header {
   background-color: #04345a;
-  background-blend-mode: multiply;
-  background-size: cover;
-  background-attachment: fixed;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: #d12270 1px 1px 2px;
 }
 
-h1 {
-  width: max-content;
-  text-align: center;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
-  font-size: 26px;
-  padding: 3px 6px;
-  background-color: #d12270;
-}
-
-.portada {
-  width: 275px;
-  height: 275px;
-  position: absolute;
-  top: 32%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  border-radius: 50%;
-  border: #d12270 solid 10px;
-}
-
-.audio-container {
+.nav {
   display: flex;
-  align-items: center;
-  flex-direction: column-reverse;
-  background: transparent;
-  border-radius: 25px;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  height: max-content;
-  transform: translate(-50%, -50%);
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
 }
 
-.play-btn {
-  width: 150px;
-  height: 150px;
-  background-color: #ffff;
-  border: none;
-  cursor: pointer;
-  border-radius: 50%;
-  color: #000;
+.nav-link {
+  color: #ffff;
+  text-decoration: none;
 }
 
-.pause-btn {
-  width: 150px;
-  height: 150px;
-  background-color: #ffff;
-  border: none;
-  cursor: pointer;
-  border-radius: 50%;
-  color: #000;
+.players {
+  color: #ffff;
+  background-color: red;
 }
 
-.pause-btn:hover,
-.play-btn:hover {
+#antenaradio {
+  position: relative;
+  top: 3px;
+  left: 5px;
+  width: 20px;
+  text-align: center;
+
+}
+
+.logo {
+  padding: 0px;
+  height: 60px;
+}
+
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 60px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  color: #ffff;
   background-color: #d12270;
   transition: 0.5s;
 }
 
-.play-btn.playing {
-  background-color: #f44336;
-  border-radius: 10px;
-}
-
-input[type="range"] {
-  width: 90vw;
-  height: 1vw;
-  -webkit-user-drag: none;
+.players:hover {
+  color: red;
   background-color: #04345a;
-  margin-right: 10px;
-  border-radius: 10px;
-  padding: 40px 0;
 }
 
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: #d12270;
+.nav-toggle {
+  color: #d12270;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
   cursor: pointer;
 }
 
-input[type="range"]::-moz-range-thumb {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #d12270;
-  cursor: pointer;
-}
 
+.player-radio {
+  display: none;
+}
 
 .social {
   position: absolute;
@@ -120,11 +106,11 @@ input[type="range"]::-moz-range-thumb {
   justify-content: space-around;
   color: rgb(255, 255, 255);
   padding: 10px;
-  top: 61%;
+  top: 60%;
   width: 100%;
   text-align: center;
   font-weight: bold;
-  z-index: 1000;
+  z-index: 1;
 }
 
 .social ul {
@@ -158,36 +144,85 @@ input[type="range"]::-moz-range-thumb {
   transform: translateY(-3px);
 }
 
-
 @media (max-width: 768px) {
-  .portada {
-    width: 225px;
-    height: 225px;
-    top: 30%;
+  body {
+    padding: 0;
   }
 
-  h1 {
-    width: 90%;
-    top: 55%;
-    font-size: 22px;
+  .header {
+    background-color: #04345a;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
   }
 
-  p {
-    font-size: 22px;
+  .nav {
+    justify-content: space-between;
   }
 
-  .audio-container {
-    top: 80%;
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #04345a;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 70px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+    color: #d12270;
+    transition: 0.5s;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .players {
+    display: none;
+  }
+
+  .player-radio {
+    font-size: 18px;
+    position: relative;
     height: max-content;
+    top: 10px;
+    left: 0px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    width: max-content;
+    background-color: red;
+    padding: 10px 10px;
+    border-radius: 10px;
   }
 
-  .pause-btn {
-    width: 125px;
-    height: 125px;
-  }
-
-  .play-btn {
-    width: 125px;
-    height: 125px;
+  .player-radio {
+    display: block;
   }
 }

@@ -17,53 +17,53 @@ navLinks.forEach(link => {
 
 
 
-const streamUrl = 'https://stream.zeno.fm/zzx9y55gbrduv';
-const audio = new Audio(streamUrl);
-const playBtn = document.getElementById('play-btn');
-const pauseBtn = document.getElementById('pause-btn');
-const volumeControl = document.getElementById('volume-control');
+// const streamUrl = 'https://stream.zeno.fm/zzx9y55gbrduv';
+// const audio = new Audio(streamUrl);
+// const playBtn = document.getElementById('play-btn');
+// const pauseBtn = document.getElementById('pause-btn');
+// const volumeControl = document.getElementById('volume-control');
 
-function showPlayBtn() {
-  playBtn.style.display = 'block';
-  pauseBtn.style.display = 'none';
-}
+// function showPlayBtn() {
+//   playBtn.style.display = 'block';
+//   pauseBtn.style.display = 'none';
+// }
 
-function showPauseBtn() {
-  playBtn.style.display = 'none';
-  pauseBtn.style.display = 'block';
-}
+// function showPauseBtn() {
+//   playBtn.style.display = 'none';
+//   pauseBtn.style.display = 'block';
+// }
 
-function playAudio() {
-  audio.load();
-  audio.play();
-  showPauseBtn();
+// function playAudio() {
+//   audio.load();
+//   audio.play();
+//   showPauseBtn();
 
   
-  localStorage.setItem('audioState', 'playing');
-}
+//   localStorage.setItem('audioState', 'playing');
+// }
 
-function pauseAudio() {
-  audio.pause();
-  showPlayBtn();
-
-
-  localStorage.setItem('audioState', 'paused');
-}
-
-function changeVolume() {
-  audio.volume = volumeControl.value / 100;
-}
-
-playBtn.addEventListener('click', playAudio);
-pauseBtn.addEventListener('click', pauseAudio);
-volumeControl.addEventListener('input', changeVolume);
+// function pauseAudio() {
+//   audio.pause();
+//   showPlayBtn();
 
 
-const audioState = localStorage.getItem('audioState');
-if (audioState === 'playing') {
-  audio.play();
-  showPauseBtn();
-} else {
-  audio.pause();
-  showPlayBtn();
-}
+//   localStorage.setItem('audioState', 'paused');
+// }
+
+// function changeVolume() {
+//   audio.volume = volumeControl.value / 100;
+// }
+
+// playBtn.addEventListener('click', playAudio);
+// pauseBtn.addEventListener('click', pauseAudio);
+// volumeControl.addEventListener('input', changeVolume);
+
+
+// const audioState = localStorage.getItem('audioState');
+// if (audioState === 'playing') {
+//   audio.play();
+//   showPauseBtn();
+// } else {
+//   audio.pause();
+//   showPlayBtn();
+// }
