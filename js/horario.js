@@ -16,32 +16,25 @@ navLinks.forEach(link => {
 });
 
 
-// Obtenemos la lista de elementos <li> que representan los días de la semana
 const diasList = document.querySelectorAll('.dias_box li');
 
-// Obtenemos el día actual
 const diaActual = new Date().getDay() - 1;
 
-// Ocultamos todos los elementos <div> de clase 'box semana'
 const boxes = document.querySelectorAll('.box.semana');
 boxes.forEach(box => {
     box.style.display = 'none';
 });
 
-// Mostramos el contenido correspondiente al día actual
 const selectedBox = document.querySelectorAll('.box.semana')[diaActual];
 selectedBox.style.display = 'block';
 
-// Iteramos sobre cada elemento <li> y añadimos un evento de click a cada uno
 diasList.forEach((dia, index) => {
     dia.addEventListener('click', () => {
-        // Ocultamos todos los elementos <div> de clase 'box semana'
         const boxes = document.querySelectorAll('.box.semana');
         boxes.forEach(box => {
             box.style.display = 'none';
         });
 
-        // Mostramos el contenido correspondiente al día seleccionado
         const selectedBox = document.querySelectorAll('.box.semana')[index];
         selectedBox.style.display = 'block';
     });
