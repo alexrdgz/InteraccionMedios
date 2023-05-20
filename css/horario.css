@@ -21,10 +21,12 @@ main {
   position: fixed;
   width: 100%;
   height: max-content;
+  z-index: 2;
 }
 .dias_box li {
   padding: 10px 20px;
   margin: 0;
+text-align: center;
 }
 
 .dias_box li:hover {
@@ -66,6 +68,8 @@ p {
   border-radius: 10px;
   text-decoration: none;
   color: #fff;
+  width: 350px;
+  margin: 20px 0;
 }
 .programas-h-con:hover {
   transition: 0.3s;
