@@ -1,80 +1,87 @@
 * {
-    box-sizing: border-box;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  }
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 body {
   margin: 0;
   padding: 0;
   width: 100%;
 }
-main{
-    position: relative;
-    top: 60px;
+main {
+  position: relative;
+  top: 60px;
 }
-.dias_box{
-    background-color:#04345a ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-    text-decoration: none;
-    position: fixed;
+.dias_box {
+  background-color: #04345a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+}
+.dias_box li {
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.dias_box li:hover {
+  background-color: #d12270;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+p {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #83c5f7;
+}
+.col-md-9 {
+  display: flex;
+  text-align: center;
+}
+.semana {
+  margin-top: 60px;
+}
+.programacionimg {
+  width: 75%;
+  margin: 20px 0;
+}
+.programas-h {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+}
+.programas-h-con {
+  background-color: #04345a;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+.programas-h-con:hover {
+  transition: 0.3s;
+  box-shadow: 0 2px #d12270;
+  transform: translateY(-4px);
+}
+.programas-h-con img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  margin: 10px 0;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .programacionimg {
     width: 100%;
-    height: 40px;
-}
-.dias_box li{
-    padding: 10px 20px;
-    margin: 0;
-}
-
-.dias_box li:hover{
-    background-color: #d12270;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-
-h2{
-    font-size: 30px;
-    text-transform: uppercase;
-}
-.col-md-9{
-    display: flex;
-    text-align: center;
-
-}
-.semana{
-    margin-top: 60px;
-
-}
-.programacionimg{
-    width: 75%;
-    margin: 20px 0;
-}
-.programas-h{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.programas-h-con{
-    background-color: #04345a;
-    padding: 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #fff;
-}
-.programas-h-con img{
-width: 250px;
-height: 250px;
-border-radius: 10px;
-margin: 10px 0;
-object-fit: cover;
-}
-
-
-@media (max-width: 768px){
-    .programacionimg{
-        width: 100%;
-    }
+  }
 }
