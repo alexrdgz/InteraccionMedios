@@ -110,11 +110,11 @@ main {
   box-shadow: rgba(0, 0, 0, 1) 5px 0px 20px;
 }
 
-.cover-img:hover {
+/* .cover-img:hover {
   border: #d12270 2px solid;
   transition: .1s;
   transform: translateY(-3px);
-}
+} */
 
 .program-container {
   padding: 10px 10px;
