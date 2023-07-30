@@ -112,6 +112,33 @@
         </section>
     </main>
     <script src="../js/programs.js"></script>
+    <script>
+        CMS.init({
+          config: {
+            backend: {
+              name: "git-gateway",
+            },
+            media_folder: "static/images",
+            public_folder: "/images",
+            collections: [
+              {
+                name: "eventos",
+                label: "Eventos",
+                folder: "content/eventos",
+                create: true,
+                slug: "{{slug}}",
+                fields: [
+                  { name: "titulo", label: "Título", widget: "string" },
+                  { name: "subtitulo", label: "Subtítulo", widget: "string" },
+                  { name: "descripcion", label: "Descripción", widget: "text" },
+                  { name: "audio", label: "URL del audio", widget: "string" },
+                ],
+              },
+            ],
+          },
+        });
+      </script>
+      
 </body>
 
 </html>
