@@ -1,0 +1,31 @@
+[
+    {
+      "day": "domingo",
+      "image": "./images/programacion/07.png"
+    },
+    {
+      "day": "lunes",
+      "image": "./images/programacion/01.png"
+    },
+    {
+      "day": "martes",
+      "image": "./images/programacion/02.png"
+    },
+    {
+      "day": "miercoles",
+      "image": "./images/programacion/03.png"
+    },
+    {
+      "day": "jueves",
+      "image": "./images/programacion/04.png"
+    },
+    {
+      "day": "viernes",
+      "image": "./images/programacion/05.png"
+    },
+    {
+      "day": "sabado",
+      "image": "./images/programacion/06.png"
+    }
+  ]
+  

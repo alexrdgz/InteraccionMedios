@@ -88,11 +88,11 @@ color: rgb(255, 255, 255);
   height: 150px;
   object-fit: cover;
 }
-/* .profile-img:hover{
+.profile-img:hover{
   border: #d12270 2px solid;
   transition: .1s;
   transform: translateY(-3px);
-} */
+}
 
 .profile-container {
   padding: 5px 15px 15px 15px;
